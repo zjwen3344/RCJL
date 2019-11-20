@@ -38,6 +38,8 @@ public class UserController extends BaseController{
         UserDO userDO= userService.Login(loginVO.getUserName(),loginVO.getPassword());
         if(userDO==null){
             throw  new BusinessException(EmBusinessError.USER_PASSORD_AND_USER_ERROR);
+
+            //测试
         }
     return CommonReturnType.create(userDO);
     }

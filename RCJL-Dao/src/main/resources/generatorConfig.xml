@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+
+    <!-- context 是逆向工程的主要配置信息 -->
+    <!-- id：起个名字 -->
+    <!-- targetRuntime：设置生成的文件适用于那个 mybatis 版本 -->
+    <context id="default" targetRuntime="MyBatis3">
+
+
+        <!--jdbc的数据库连接-->
+        <!--这里是以变量的形式定义，具体的值在 application.properties 文件中-->
+        <!--jdbc:mysql://localhost:3306/数据库名?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC-->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/rc?serverTimezone=UTC"
+                        userId="root"
+                        password="abc123">
+        </jdbcConnection>
+
+        <!-- targetPackage：生成的实体类所在的包 -->
+        <!-- targetProject：生成的实体类所在的硬盘位置 -->
+        <!-- DataObject 类存放位置 -->
+        <javaModelGenerator targetPackage="com.buoyantec.dataobject"
+                            targetProject=".\src\main\java">
+            <!-- 是否允许子包 -->
+            <property name="enableSubPackages" value="false" />
+            <!-- 是否对modal添加构造函数 -->
+            <property name="constructorBased" value="true" />
+            <!-- 是否清理从数据库中查询出的字符串左右两边的空白字符 -->
+            <property name="trimStrings" value="true" />
+            <!-- 建立modal对象是否不可改变 即生成的modal对象不会有setter方法，只有构造方法 -->
+            <property name="immutable" value="false" />
+        </javaModelGenerator>
+
+        <!-- targetPackage 和 targetProject：生成的 mapper 文件的包和位置 -->
+        <sqlMapGenerator targetPackage="mapping"
+                         targetProject=".\src\main\resources">
+            <!-- 针对数据库的一个配置，是否把 schema 作为字包名 -->
+            <property name="enableSubPackages" value="false" />
+        </sqlMapGenerator>
+
+        <!-- targetPackage 和 targetProject：生成的 interface 文件的包和位置 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="com.buoyantec.dao" targetProject=".\src\main\java">
+            <!-- 针对 oracle 数据库的一个配置，是否把 schema 作为字包名 -->
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!--生成对应表及类名-->
+        <table tableName="t_attachment" domainObjectName="attachmentDO">
+            <generatedKey column="ta_ID" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_user" domainObjectName="UserDO">
+
+            <generatedKey column="tu_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_class" domainObjectName="ClassDO">
+            <generatedKey column="tc_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_classright" domainObjectName="classrightDO">
+            <generatedKey column="tc_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_colleges" domainObjectName="collegesDO">
+            <generatedKey column="tc_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_collegesright" domainObjectName="collegesrightDO">
+            <generatedKey column="tc_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_enterprise" domainObjectName="enterpriseDO">
+            <generatedKey column="te_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_group" domainObjectName="groupDO">
+            <generatedKey column="tg_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_grouprightrelation" domainObjectName="grouprightrelationDO">
+            <generatedKey column="tgr_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_grouprolerelation" domainObjectName="grouprolerelationDO">
+            <generatedKey column="tgr_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_log" domainObjectName="logDO">
+            <generatedKey column="log_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_major" domainObjectName="majorDO">
+            <generatedKey column="tm_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_majorright" domainObjectName="majorrightDO">
+            <generatedKey column="tm_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_news" domainObjectName="newsDO">
+            <generatedKey column="tn_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_news_class" domainObjectName="news_classDO">
+            <generatedKey column="tnc_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_organization" domainObjectName="organizationDO">
+            <generatedKey column="to_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_right" domainObjectName="rightDO">
+            <generatedKey column="tr_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_role" domainObjectName="roleDO">
+            <generatedKey column="tr_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_rolerightrelation" domainObjectName="rolerightrelationDO">
+            <generatedKey column="trr_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_school" domainObjectName="schoolDO">
+            <generatedKey column="ts_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_schoolright" domainObjectName="schoolrightDO">
+            <generatedKey column="ts_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_speyears" domainObjectName="speyearsDO">
+            <generatedKey column="ts_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_userep" domainObjectName="userepDO">
+            <generatedKey column="ti_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_usergrouprelation" domainObjectName="usergrouprelationDO">
+            <generatedKey column="tug_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_userrightrelation" domainObjectName="userrightrelationDO">
+            <generatedKey column="tur_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_userrolerelation" domainObjectName="userrolerelationDO">
+            <generatedKey column="tur_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+        <table tableName="t_token" domainObjectName="tokenDO">
+            <generatedKey column="tk_id" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+
+    </context>
+</generatorConfiguration>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="RCJL-Service" />
+        <module name="RCJL-Utils" />
+        <module name="RCJL-controller" />
+        <module name="RCJL-Response" />
+        <module name="RCJL-shiro" />
+        <module name="RCJL-dao" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="RCJL-dataobject" target="1.5" />
+      <module name="RCJL-main" target="1.5" />
+      <module name="RCJLShiro" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="RCJL-Response" options="-parameters" />
+      <module name="RCJL-Service" options="-parameters" />
+      <module name="RCJL-Utils" options="-parameters" />
+      <module name="RCJL-controller" options="-parameters" />
+      <module name="RCJL-dao" options="-parameters" />
+      <module name="RCJL-shiro" options="-parameters" />
+      <module name="RCJLShiro" options="-parameters" />
+      <module name="shiro" options="-parameters" />
+    </option>
+  </component>
+</project>

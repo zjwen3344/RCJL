@@ -14,7 +14,7 @@ public class UserEPServiceServiceImpl implements UserEPService {
 
 
     @Autowired
-    private userepDOMapper userepDOMapper;
+    private com.buoyantec.dao.userepDOMapper userepDOMapper;
 
     /**
      * 注册用户与企业信息关系

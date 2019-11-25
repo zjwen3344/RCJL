@@ -1,5 +1,6 @@
-package com.buoyantec;
+package com.buoyantec.UserController;
 
+import com.buoyantec.BaseController;
 import com.buoyantec.Utils.EmRegistType;
 import com.buoyantec.Utils.MD5Utils;
 import com.buoyantec.Utils.MyBeanUtils;
@@ -24,7 +25,7 @@ import java.util.Map;
 @RestController("User")
 //设置控制器的URL
 @RequestMapping("/User")
-public class UserController extends BaseController{
+public class UserController extends BaseController {
     //使用Service层的Userservice 进行业务处理   实现业务分离
 
     @Autowired

@@ -94,6 +94,27 @@ public class UserServiceImpl implements UserService {
     }
 
     /**
+     * 通过用户名查找ID
+     * @param name  用户名
+     * @return
+     */
+    @Override
+    public UserDO FindByUserName(String name) {
+        //创建一个复杂查询器
+        UserDOExample userDOExample =new UserDOExample();
+        //通过上面的复杂查询器，来生成一个查询条件
+        UserDOExample.Criteria criteria=userDOExample.createCriteria();
+        //设置查询条件
+        criteria.andLoginNameEqualTo(name);
+        //查询
+        List<UserDO>userDOList=userDOMapper.selectByExample(userDOExample);
+        if(userDOList.size()!=0){
+            return  userDOList.get(0);
+        }
+        return null;
+    }
+
+    /**
      * 将UserDO转换成Usermode 实现数据库对象 部分字段脱密处理。
      *
      * @param userDO 数据库DO对象

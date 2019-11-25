@@ -18,6 +18,7 @@
       <module name="RCJL-dataobject" target="1.5" />
       <module name="RCJL-main" target="1.5" />
       <module name="RCJLShiro" target="1.8" />
+      <module name="shiro" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

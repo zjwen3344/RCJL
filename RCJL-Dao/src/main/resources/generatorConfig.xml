@@ -114,7 +114,7 @@
             <generatedKey column="to_id" sqlStatement="Mysql" identity="true"></generatedKey>
         </table>
 
-        <table tableName="t_right" domainObjectName="rightDO">
+        <table tableName="t_permission" domainObjectName="permissionDO">
             <generatedKey column="tr_id" sqlStatement="Mysql" identity="true"></generatedKey>
         </table>
 

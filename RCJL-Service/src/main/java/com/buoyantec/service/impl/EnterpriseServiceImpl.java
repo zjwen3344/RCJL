@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class EnterpriseServiceImpl implements EnterpriseService {
 
     @Autowired
-    private enterpriseDOMapper enterpriseDOMapper;
+    private com.buoyantec.dao.enterpriseDOMapper enterpriseDOMapper;
 
 
     /**

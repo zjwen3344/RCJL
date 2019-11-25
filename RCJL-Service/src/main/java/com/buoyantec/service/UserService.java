@@ -4,7 +4,6 @@ import com.buoyantec.dataobject.UserDO;
 import com.buoyantec.dataobject.enterpriseDO;
 import com.buoyantec.error.BusinessException;
 import com.buoyantec.service.model.UserModel;
-import org.apache.tomcat.jni.User;
 
 public interface UserService {
     //通过ID获取用户名
@@ -36,5 +35,12 @@ public interface UserService {
      * @return 如果返回了UserDo对象则表示此用户名与密码正确，反之则错误
      */
     UserDO Login(String UserName,String Password);
+
+    /**
+     * 通过用户名查找用户
+     * @param name  用户名
+     * @return
+     */
+    UserDO FindByUserName(String name);
 
 }

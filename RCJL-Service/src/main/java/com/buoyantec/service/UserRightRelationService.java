@@ -11,9 +11,7 @@ import java.util.List;
  * @author: zjwen3344@gmail.com
  * @create: 2019-11-22 14:54
  **/
-public interface UserRightRelation {
-
-
+public interface UserRightRelationService {
     List<userrightrelationDO> FindByUserID(Long in) throws BusinessException;
     List<userrightrelationDO> FindByUserName(String in) throws BusinessException;
     void Save(userrightrelationDO userRela);

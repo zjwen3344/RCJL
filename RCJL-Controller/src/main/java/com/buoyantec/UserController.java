@@ -1,4 +1,4 @@
-package com.buoyantec.UserController;
+package com.buoyantec;
 
 import com.buoyantec.BaseController;
 import com.buoyantec.Utils.EmRegistType;
@@ -7,9 +7,12 @@ import com.buoyantec.Utils.MyBeanUtils;
 import com.buoyantec.Utils.RegexUtils;
 import com.buoyantec.dataobject.UserDO;
 import com.buoyantec.dataobject.enterpriseDO;
+import com.buoyantec.dataobject.tokenDO;
 import com.buoyantec.error.BusinessException;
 import com.buoyantec.error.EmBusinessError;
 import com.buoyantec.response.CommonReturnType;
+import com.buoyantec.service.ShiroService;
+import com.buoyantec.service.TokenService;
 import com.buoyantec.service.UserService;
 import com.buoyantec.service.model.UserModel;
 import com.buoyantec.viewobject.RegisterUSerVO;
@@ -31,18 +34,26 @@ public class UserController extends BaseController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private ShiroService shiroService;
+
+//    @Autowired
+//    private  TokenService tokenService;
+
+
+
     @RequestMapping(value="/Login",method = RequestMethod.POST)
     public  CommonReturnType Login(@RequestBody UserLoginVO loginVO) throws BusinessException {
         if(com.alibaba.druid.util.StringUtils.isEmpty(loginVO.getUserName())||com.alibaba.druid.util.StringUtils.isEmpty(loginVO.getPassword()))
             throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR,"用户名或密码不能为空");
         //登录
-        UserDO userDO= userService.Login(loginVO.getUserName(),loginVO.getPassword());
-        if(userDO==null){
-            throw  new BusinessException(EmBusinessError.USER_PASSORD_AND_USER_ERROR);
+       // UserDO userDO= userService.Login(loginVO.getUserName(),loginVO.getPassword());
+//        if(userDO==null){
+//            throw  new BusinessException(EmBusinessError.USER_PASSORD_AND_USER_ERROR);
+//            //测试
+//        }
 
-            //测试
-        }
-    return CommonReturnType.create(userDO);
+    return CommonReturnType.create( shiroService.createToken(loginVO.getUserName(),loginVO.getPassword()));
     }
 
 

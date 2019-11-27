@@ -6,9 +6,12 @@ import com.buoyantec.dataobject.userrightrelationDO;
 import com.buoyantec.dataobject.userrightrelationDOExample;
 import com.buoyantec.error.BusinessException;
 import com.buoyantec.error.EmBusinessError;
-import com.buoyantec.service.UserRightRelation;
+import com.buoyantec.service.UserRightRelationService;
 import com.buoyantec.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
@@ -19,12 +22,15 @@ import java.util.List;
  * @author: zjwen3344@gmail.com
  * @create: 2019-11-22 16:23
  **/
-public class UserRightRelationImpl implements UserRightRelation {
+@Service
+public class UserRightRelationServiceImpl implements UserRightRelationService {
     @Autowired
     private userrightrelationDOMapper rightrelationMapper;
 
     @Autowired
     private UserService userService;
+
+    private Logger logger= LoggerFactory.getLogger(UserRightRelationServiceImpl.class);
 
     /**
      * 通过用户ID查询用户权限
@@ -39,6 +45,10 @@ public class UserRightRelationImpl implements UserRightRelation {
         userrightrelationDOExample.Criteria rightcriter= rightExample.createCriteria();
         rightcriter.andTuIdEqualTo(id);
         List<userrightrelationDO> listright=rightrelationMapper.selectByExample(rightExample);
+
+        userrightrelationDO a=rightrelationMapper.selectByPrimaryKey(Long.valueOf(1) );
+        logger.info(":",a);
+
         if(listright.isEmpty()){
             return null;
         }

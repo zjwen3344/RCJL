@@ -9,9 +9,12 @@ public enum EmBusinessError  implements CommonError{
     //20000开头为用户信息相关错误类型
     USER_NOT_EXIST(20001,"用户不存在"),
     USER_PASSORD_AND_USER_ERROR(20002,"用户名或密码错误"),
+    TOKEN_IS_NULL(20003,"无此用户Token信息"),
+    PERMISSIONS_NOT_INFO(20004,"无此用户权限信息"),
+
+    //30000企业错误类型
     Enterprise_Not_Null(30001,"企业信息不能为空"),
-    Enterprise_ID_NUll(30002,"企业与用户ID不能为空"),
-    TOKEN_IS_NULL(20003,"无此用户Token信息");
+    Enterprise_ID_NUll(30002,"企业与用户ID不能为空"),;
     ;
     private  int errCode;
     private  String errmsg;

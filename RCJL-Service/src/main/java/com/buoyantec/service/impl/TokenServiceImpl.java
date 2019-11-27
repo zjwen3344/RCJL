@@ -1,7 +1,6 @@
 package com.buoyantec.service.impl;
 
 import com.buoyantec.dao.UserDOMapper;
-import com.buoyantec.dao.tokenDOMapper;
 import com.buoyantec.dataobject.UserDO;
 import com.buoyantec.dataobject.UserDOExample;
 import com.buoyantec.dataobject.tokenDO;
@@ -10,6 +9,7 @@ import com.buoyantec.error.BusinessException;
 import com.buoyantec.error.EmBusinessError;
 import com.buoyantec.service.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -19,18 +19,28 @@ import java.util.List;
  * @author: zjwen3344@gmail.com
  * @create: 2019-11-21 15:34
  **/
+@Service
 public class TokenServiceImpl implements TokenService {
 
     @Autowired
     private com.buoyantec.dao.tokenDOMapper tokenDOMapper;
 
+    @Autowired
     private UserDOMapper userDOMapper;
 
-    @Override
-    public tokenDO findByUserId(Integer id) {
 
-        return tokenDOMapper.selectByPrimaryKey(Long.valueOf(id));
+    @Override
+    public tokenDO findByUserId(Long id) {
+        tokenDOExample example=new tokenDOExample();
+        tokenDOExample.Criteria criteria=example.createCriteria();
+        criteria.andTuIdEqualTo(id);
+        List<tokenDO> token= tokenDOMapper.selectByExample(example);
+        if(token.size()!=0){
+            return  token.get(0);
+        }
+        return null;
     }
+
 
     /**
      * 通过用户名查询用户对象的token
@@ -50,7 +60,8 @@ public class TokenServiceImpl implements TokenService {
         if (list.size() == 0) {
             throw new BusinessException(EmBusinessError.USER_NOT_EXIST);
         }
-        return tokenDOMapper.selectByPrimaryKey(list.get(0).getToId());
+        tokenDO DO=findByUserId(list.get(0).getTuId());
+        return DO;
     }
 
     /**
@@ -77,6 +88,11 @@ public class TokenServiceImpl implements TokenService {
         List<tokenDO> list = tokenDOMapper.selectByExample(tokenDOExample);
         if (list.size() == 0) throw new BusinessException(EmBusinessError.TOKEN_IS_NULL);
         return list.get(0);
+    }
+
+    @Override
+    public void Updata(tokenDO tokenDO) {
+        tokenDOMapper.updateByPrimaryKeySelective(tokenDO);
     }
 }
 

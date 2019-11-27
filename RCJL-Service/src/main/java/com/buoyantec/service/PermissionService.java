@@ -1,5 +1,9 @@
 package com.buoyantec.service;
 
+import com.buoyantec.dataobject.permissionDO;
+
+import java.util.List;
+
 /**
  * @program: RCJL
  * @description: 权限表操作
@@ -7,5 +11,8 @@ package com.buoyantec.service;
  * @create: 2019-11-25 10:09
  **/
 public interface PermissionService {
-
+    permissionDO FindByID(Long id);
+    List<permissionDO> FindByID(List<Long> id);
+    void Save(permissionDO perDO);
+    void Delect(Long id,Long UserID);
 }

@@ -14,7 +14,7 @@
         <!--这里是以变量的形式定义，具体的值在 application.properties 文件中-->
         <!--jdbc:mysql://localhost:3306/数据库名?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC-->
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/rc?serverTimezone=UTC"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/rc?serverTimezone=Asia/Shanghai"
                         userId="root"
                         password="abc123">
         </jdbcConnection>
@@ -114,7 +114,7 @@
             <generatedKey column="to_id" sqlStatement="Mysql" identity="true"></generatedKey>
         </table>
 
-        <table tableName="t_right" domainObjectName="rightDO">
+        <table tableName="t_permission" domainObjectName="permissionDO">
             <generatedKey column="tr_id" sqlStatement="Mysql" identity="true"></generatedKey>
         </table>
 

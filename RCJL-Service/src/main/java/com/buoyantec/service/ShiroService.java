@@ -7,12 +7,10 @@ import java.util.Map;
 
 public interface ShiroService {
     //传入用户ID 生成Token对象
-    public Map<String,Object> createToken(Integer userID);
+     Map<String,Object> createToken(String UserName,String Password) throws BusinessException;
 
-    //登出
-    public void LogOut(Integer userID);
 
     //查找Token
-    public tokenDO findByToken(String accessToken) throws BusinessException;
+     tokenDO findByToken(String accessToken) throws BusinessException;
 
 }

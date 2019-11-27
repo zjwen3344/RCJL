@@ -10,12 +10,14 @@ import com.buoyantec.error.BusinessException;
  * @create: 2019-11-21 15:31
  **/
 public interface TokenService {
-    tokenDO findByUserId(Integer id);
+    tokenDO findByUserId(Long id);
 
-    tokenDO findByUserName(String name) throws BusinessException;
+    tokenDO findByUserName(String name)throws BusinessException ;
 
     void Save(tokenDO tokenDO);
 
     tokenDO findByToken(String accessToken) throws BusinessException;
 
+    void Updata(tokenDO tokenDO);
 }
+

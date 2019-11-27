@@ -28,10 +28,10 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public UserModel getUserById(Integer id) {
+    public UserDO getUserById(Long id) {
         //调用userdomapper获取到对应的用户 dataobject
         UserDO userDOA = userDOMapper.selectByPrimaryKey((long) id);
-        return ConvertFromDataObject(userDOA);
+        return userDOA;
     }
 
     //企业用户注册用接口

@@ -13,7 +13,7 @@ public interface UserService {
      * @param id
      * @return
      */
-    UserModel getUserById(Integer id);
+    UserDO getUserById(Long id);
 
     /**
      * 企业用户注册

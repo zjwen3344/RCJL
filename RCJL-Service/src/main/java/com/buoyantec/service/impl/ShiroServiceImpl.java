@@ -30,7 +30,7 @@ public class ShiroServiceImpl implements ShiroService {
      * @return
      */
     @Override
-    public Map<String, Object> createToken(String UserName,String Password) throws BusinessException {
+    public Map<String, Object> createToken(String UserName,String Password,Long UserID) throws BusinessException {
         Map<String, Object> result = new HashMap<>();
         //生成Token
         String token = JWTUtil.sign(UserName,Password);
@@ -43,12 +43,12 @@ public class ShiroServiceImpl implements ShiroService {
         Date expireTime = new Date(now.getTime() + EXPIRE_TIME * 1000);
         //查询这个对象在token表里面是否已经有了数据记录
 
-        tokenDO tokenEntity =tokenService.findByUserName(UserName);
+        tokenDO tokenEntity =tokenService.findByUserId(UserID);
 
         //如果没有 token 就创建一个Token对象并且保存到数据库里面
         if(tokenEntity==null){
             tokenEntity=new tokenDO();
-            tokenEntity.setTuId(Long.valueOf( tokenEntity.getTuId()));
+            tokenEntity.setTuId(Long.valueOf( UserID));
             tokenEntity.setTkBuildtime(now);
             tokenEntity.setTkExpired(expireTime);
             tokenEntity.setTkToken(token);

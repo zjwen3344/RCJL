@@ -6,6 +6,7 @@ public enum EmBusinessError  implements CommonError{
     //未知错误
     UNKNOWN_ERROR(10002,"未知错误")
     ,
+    SYSTEM_ERROR(10003,"系统Util工具错误"),
     //20000开头为用户信息相关错误类型
     USER_NOT_EXIST(20001,"用户不存在"),
     USER_PASSORD_AND_USER_ERROR(20002,"用户名或密码错误"),

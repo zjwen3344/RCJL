@@ -1,6 +1,6 @@
 package com.buoyantec.error;
 
-public class BusinessException  extends  Exception implements CommonError {
+public class BusinessException  extends  Exception implements CommonError  {
 
     private CommonError commonError;
 

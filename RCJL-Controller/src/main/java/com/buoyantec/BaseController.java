@@ -33,7 +33,7 @@ public class BaseController {
             responseData.put("ErrMsg", EmBusinessError.UNKNOWN_ERROR.getErrmsg());
         }
 
-        return CommonReturnType.create(responseData, "Error");
+        return CommonReturnType.create(responseData, "Error",500);
     }
 
 }

@@ -1,4 +1,4 @@
-package com.buoyantec;
+package com.buoyantec.UserController;
 
 import com.buoyantec.BaseController;
 import com.buoyantec.Utils.EmRegistType;
@@ -47,13 +47,13 @@ public class UserController extends BaseController {
         if(com.alibaba.druid.util.StringUtils.isEmpty(loginVO.getUserName())||com.alibaba.druid.util.StringUtils.isEmpty(loginVO.getPassword()))
             throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR,"用户名或密码不能为空");
         //登录
-       // UserDO userDO= userService.Login(loginVO.getUserName(),loginVO.getPassword());
-//        if(userDO==null){
-//            throw  new BusinessException(EmBusinessError.USER_PASSORD_AND_USER_ERROR);
-//            //测试
-//        }
+        UserDO userDO= userService.Login(loginVO.getUserName(),loginVO.getPassword());
+        if(userDO==null){
+            throw  new BusinessException(EmBusinessError.USER_PASSORD_AND_USER_ERROR);
 
-    return CommonReturnType.create( shiroService.createToken(loginVO.getUserName(),loginVO.getPassword()));
+        }
+
+    return CommonReturnType.create( shiroService.createToken(userDO.getLoginName(),userDO.getPassword(),userDO.getTuId()));
     }
 
 

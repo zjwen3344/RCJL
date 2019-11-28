@@ -7,7 +7,7 @@ import java.util.Map;
 
 public interface ShiroService {
     //传入用户ID 生成Token对象
-     Map<String,Object> createToken(String UserName,String Password) throws BusinessException;
+     Map<String,Object> createToken(String UserName,String Password,Long UserID) throws BusinessException;
 
 
     //查找Token

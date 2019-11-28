@@ -115,7 +115,7 @@ public class AuthRealm extends AuthorizingRealm {
     }
 
     @Override
-    protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
+    protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException   {
 
         String accessToken = (String) authenticationToken.getCredentials();
        System.out.printf(accessToken);
@@ -133,10 +133,8 @@ public class AuthRealm extends AuthorizingRealm {
             if(user==null){
                 throw new BusinessException(EmBusinessError.USER_NOT_EXIST);
             }
-
-
         } catch (BusinessException e) {
-            e.printStackTrace();
+            throw new AuthenticationException("Token无效或已过期");
         }
         SimpleAuthenticationInfo info=new SimpleAuthenticationInfo(user,accessToken,this.getName());
         return info;

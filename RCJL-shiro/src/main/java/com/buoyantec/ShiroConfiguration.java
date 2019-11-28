@@ -45,6 +45,9 @@ public class ShiroConfiguration {
         securityManager.setSubjectDAO(subjectDAO);
         logger.info("初始化securityManager成功！\n");
 
+        // 设置自定义缓存(Cache)管理器
+        securityManager.setCacheManager(new CustomCacheManager());
+
         return securityManager;
     }
 

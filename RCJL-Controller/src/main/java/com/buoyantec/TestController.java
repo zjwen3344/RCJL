@@ -64,13 +64,18 @@ protected  final Logger logger = LoggerFactory.getLogger(TestController.class);
         map.put("success", true);
         map.put("msg", "当前用户有delete的权力");
 
-        logger.trace("Trace");
-        logger.debug("Debug");
-        logger.info("Info");
-        logger.warn("Warn");
-        logger.error("Error");
+        return map;
+    }
 
+    @RequiresPermissions({"TestLLLLLLLLL"}) //没有的话 AuthorizationException
+    @PostMapping("/Test")
+    public Map<String, Object> Test(String token) {
+        System.out.println("delete");
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("success", true);
+        map.put("msg", "当前用户有TestLLLLLLLLL的权力");
 
         return map;
     }
+
 }

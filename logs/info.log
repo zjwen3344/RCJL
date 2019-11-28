@@ -2034,3 +2034,773 @@ Caused by: java.net.BindException: Address already in use: bind
 10:45:59.426 [http-nio-8080-exec-8] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJI123UzI1NiJ9.eyJleHAiOjE1NzQ5NTIxMTUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.qnwdyMMtJ8oVhGHPGtvFzN6N8kQL52rRRvVBcJbqxtk
 10:46:00.256 [http-nio-8080-exec-10] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJI123UzI1NiJ9.eyJleHAiOjE1NzQ5NTIxMTUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.qnwdyMMtJ8oVhGHPGtvFzN6N8kQL52rRRvVBcJbqxtk
 10:46:18.429 [Thread-11] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+15:56:27.378 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 3004 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+15:56:27.383 [main] INFO  App - No active profile set, falling back to default profiles: default
+15:56:28.256 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+15:56:28.269 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+15:56:28.299 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+15:56:29.238 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+15:56:29.256 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+15:56:29.305 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+15:56:29.625 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+15:56:29.634 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+15:56:29.634 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+15:56:29.638 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+15:56:29.719 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:56:29.904 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+15:56:31.177 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+15:56:31.186 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+15:56:31.204 [main] INFO  App - Started App in 4.104 seconds (JVM running for 5.473)
+15:56:37.862 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+15:56:37.934 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJI123UzI1NiJ9.eyJleHAiOjE1NzQ5NTIxMTUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.qnwdyMMtJ8oVhGHPGtvFzN6N8kQL52rRRvVBcJbqxtk
+15:56:38.006 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+15:56:49.698 [http-nio-8080-exec-4] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+15:57:09.718 [http-nio-8080-exec-4] ERROR com.buoyantec.CustomCache - 通过Key:com.buoyantec.dataobject.UserDO@2f081829||获取数据时失败，错误原因是：com.buoyantec.error.BusinessException
+15:57:29.725 [http-nio-8080-exec-4] ERROR com.buoyantec.CustomCache - 通过Key:com.buoyantec.dataobject.UserDO@2f081829||获取数据时失败，错误原因是：com.buoyantec.error.BusinessException
+15:57:32.321 [http-nio-8080-exec-4] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+15:57:52.332 [http-nio-8080-exec-4] ERROR com.buoyantec.CustomCache - 保存缓存时失败KEY:com.buoyantec.dataobject.UserDO@2f081829||获取数据时失败，错误原因是：com.buoyantec.error.BusinessException
+15:57:52.335 [http-nio-8080-exec-4] INFO  com.buoyantec.TestController - Info
+15:57:52.335 [http-nio-8080-exec-4] WARN  com.buoyantec.TestController - Warn
+15:57:52.335 [http-nio-8080-exec-4] ERROR com.buoyantec.TestController - Error
+15:57:54.584 [http-nio-8080-exec-5] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+15:58:14.588 [http-nio-8080-exec-5] ERROR com.buoyantec.CustomCache - 通过Key:com.buoyantec.dataobject.UserDO@529b9593||获取数据时失败，错误原因是：com.buoyantec.error.BusinessException
+15:58:34.591 [http-nio-8080-exec-5] ERROR com.buoyantec.CustomCache - 通过Key:com.buoyantec.dataobject.UserDO@529b9593||获取数据时失败，错误原因是：com.buoyantec.error.BusinessException
+15:58:37.166 [http-nio-8080-exec-5] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+15:58:57.175 [http-nio-8080-exec-5] ERROR com.buoyantec.CustomCache - 保存缓存时失败KEY:com.buoyantec.dataobject.UserDO@529b9593||获取数据时失败，错误原因是：com.buoyantec.error.BusinessException
+15:58:57.177 [http-nio-8080-exec-5] INFO  com.buoyantec.TestController - Info
+15:58:57.177 [http-nio-8080-exec-5] WARN  com.buoyantec.TestController - Warn
+15:58:57.178 [http-nio-8080-exec-5] ERROR com.buoyantec.TestController - Error
+16:02:46.851 [Thread-13] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+16:03:00.655 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 12868 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+16:03:00.661 [main] INFO  App - No active profile set, falling back to default profiles: default
+16:03:01.530 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:03:01.540 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:03:01.573 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+16:03:02.454 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+16:03:02.474 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+16:03:02.524 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+16:03:02.855 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:03:02.862 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:03:02.863 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:03:02.866 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+16:03:02.947 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:03:03.122 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+16:03:04.177 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:03:04.186 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:03:04.202 [main] INFO  App - Started App in 3.783 seconds (JVM running for 4.74)
+16:03:07.764 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:03:07.837 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:03:07.907 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:03:10.464 [http-nio-8080-exec-1] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+16:03:10.480 [http-nio-8080-exec-1] INFO  com.buoyantec.TestController - Info
+16:03:10.480 [http-nio-8080-exec-1] WARN  com.buoyantec.TestController - Warn
+16:03:10.480 [http-nio-8080-exec-1] ERROR com.buoyantec.TestController - Error
+16:03:30.656 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:03:30.662 [http-nio-8080-exec-2] INFO  com.buoyantec.TestController - Info
+16:03:30.662 [http-nio-8080-exec-2] WARN  com.buoyantec.TestController - Warn
+16:03:30.662 [http-nio-8080-exec-2] ERROR com.buoyantec.TestController - Error
+16:03:31.272 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:03:31.276 [http-nio-8080-exec-3] INFO  com.buoyantec.TestController - Info
+16:03:31.276 [http-nio-8080-exec-3] WARN  com.buoyantec.TestController - Warn
+16:03:31.276 [http-nio-8080-exec-3] ERROR com.buoyantec.TestController - Error
+16:03:31.816 [http-nio-8080-exec-4] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:03:31.820 [http-nio-8080-exec-4] INFO  com.buoyantec.TestController - Info
+16:03:31.820 [http-nio-8080-exec-4] WARN  com.buoyantec.TestController - Warn
+16:03:31.820 [http-nio-8080-exec-4] ERROR com.buoyantec.TestController - Error
+16:03:32.314 [http-nio-8080-exec-5] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:03:32.317 [http-nio-8080-exec-5] INFO  com.buoyantec.TestController - Info
+16:03:32.317 [http-nio-8080-exec-5] WARN  com.buoyantec.TestController - Warn
+16:03:32.317 [http-nio-8080-exec-5] ERROR com.buoyantec.TestController - Error
+16:03:32.879 [http-nio-8080-exec-6] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:03:32.883 [http-nio-8080-exec-6] INFO  com.buoyantec.TestController - Info
+16:03:32.883 [http-nio-8080-exec-6] WARN  com.buoyantec.TestController - Warn
+16:03:32.883 [http-nio-8080-exec-6] ERROR com.buoyantec.TestController - Error
+16:03:49.239 [http-nio-8080-exec-7] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:03:49.243 [http-nio-8080-exec-7] INFO  com.buoyantec.TestController - Info
+16:03:49.244 [http-nio-8080-exec-7] WARN  com.buoyantec.TestController - Warn
+16:03:49.244 [http-nio-8080-exec-7] ERROR com.buoyantec.TestController - Error
+16:03:49.851 [http-nio-8080-exec-8] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:03:49.854 [http-nio-8080-exec-8] INFO  com.buoyantec.TestController - Info
+16:03:49.854 [http-nio-8080-exec-8] WARN  com.buoyantec.TestController - Warn
+16:03:49.854 [http-nio-8080-exec-8] ERROR com.buoyantec.TestController - Error
+16:04:13.387 [http-nio-8080-exec-9] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:04:13.391 [http-nio-8080-exec-9] INFO  com.buoyantec.TestController - Info
+16:04:13.391 [http-nio-8080-exec-9] WARN  com.buoyantec.TestController - Warn
+16:04:13.391 [http-nio-8080-exec-9] ERROR com.buoyantec.TestController - Error
+16:04:14.535 [http-nio-8080-exec-10] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:04:14.539 [http-nio-8080-exec-10] INFO  com.buoyantec.TestController - Info
+16:04:14.539 [http-nio-8080-exec-10] WARN  com.buoyantec.TestController - Warn
+16:04:14.539 [http-nio-8080-exec-10] ERROR com.buoyantec.TestController - Error
+16:04:15.250 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:04:15.254 [http-nio-8080-exec-1] INFO  com.buoyantec.TestController - Info
+16:04:15.254 [http-nio-8080-exec-1] WARN  com.buoyantec.TestController - Warn
+16:04:15.254 [http-nio-8080-exec-1] ERROR com.buoyantec.TestController - Error
+16:04:15.912 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:04:15.915 [http-nio-8080-exec-2] INFO  com.buoyantec.TestController - Info
+16:04:15.915 [http-nio-8080-exec-2] WARN  com.buoyantec.TestController - Warn
+16:04:15.915 [http-nio-8080-exec-2] ERROR com.buoyantec.TestController - Error
+16:06:09.184 [http-nio-8080-exec-5] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:06:12.184 [http-nio-8080-exec-7] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:06:12.883 [http-nio-8080-exec-9] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:06:13.303 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:06:20.024 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:07:09.003 [http-nio-8080-exec-5] INFO  com.buoyantec.AuthRealm - 1eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:07:23.696 [http-nio-8080-exec-7] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzEwMDEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.a8vhSBBHAK42gruLF3MGkcFwz0CT3eHCv6CVQ8nUSQA
+16:08:24.209 [http-nio-8080-exec-10] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzE2OTIsInVzZXJuYW1lIjoiYjEyd3FzZGEzNyJ9.j1X2UrXBbT-ZHTdOovyfpSRYCwK1QMGIEEk0B4Ckqog
+16:08:43.681 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzE2OTIsInVzZXJuYW1lIjoiYjEyd3FzZGEzNyJ9.j1X2UrXBbT-ZHTdOovyfpSRYCwK1QMGIEEk0B4Ckqog
+16:08:44.498 [http-nio-8080-exec-1] INFO  com.buoyantec.TestController - Info
+16:08:44.498 [http-nio-8080-exec-1] WARN  com.buoyantec.TestController - Warn
+16:08:44.498 [http-nio-8080-exec-1] ERROR com.buoyantec.TestController - Error
+16:09:03.280 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzE2OTIsInVzZXJuYW1lIjoiYjEyd3FzZGEzNyJ9.j1X2UrXBbT-ZHTdOovyfpSRYCwK1QMGIEEk0B4Ckqog
+16:09:03.969 [http-nio-8080-exec-2] INFO  com.buoyantec.TestController - Info
+16:09:03.970 [http-nio-8080-exec-2] WARN  com.buoyantec.TestController - Warn
+16:09:03.970 [http-nio-8080-exec-2] ERROR com.buoyantec.TestController - Error
+16:09:13.953 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzE1MzYsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.kXEhSPzFNQazQ9v4kMZ-Pr0GzkQHOsWr7pIapJCVGWU
+16:09:14.465 [http-nio-8080-exec-3] INFO  com.buoyantec.TestController - Info
+16:09:14.465 [http-nio-8080-exec-3] WARN  com.buoyantec.TestController - Warn
+16:09:14.465 [http-nio-8080-exec-3] ERROR com.buoyantec.TestController - Error
+16:09:55.809 [http-nio-8080-exec-4] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzE1MzYsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.kXEhSPzFNQazQ9v4kMZ-Pr0GzkQHOsWr7pIapJCVGWU
+16:09:55.814 [http-nio-8080-exec-4] INFO  com.buoyantec.TestController - Info
+16:09:55.814 [http-nio-8080-exec-4] WARN  com.buoyantec.TestController - Warn
+16:09:55.814 [http-nio-8080-exec-4] ERROR com.buoyantec.TestController - Error
+16:10:13.936 [http-nio-8080-exec-6] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzE4MDYsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.VWELzqsdOxiuP2rYZomK7ubxPJVmR0P_jrweCxkGTV8
+16:10:13.939 [http-nio-8080-exec-6] INFO  com.buoyantec.TestController - Info
+16:10:13.939 [http-nio-8080-exec-6] WARN  com.buoyantec.TestController - Warn
+16:10:13.939 [http-nio-8080-exec-6] ERROR com.buoyantec.TestController - Error
+16:10:56.674 [http-nio-8080-exec-7] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzE4MDYsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.VWELzqsdOxiuP2rYZomK7ubxPJVmR0P_jrweCxkGTV8
+16:10:56.677 [http-nio-8080-exec-7] INFO  com.buoyantec.TestController - Info
+16:10:56.677 [http-nio-8080-exec-7] WARN  com.buoyantec.TestController - Warn
+16:10:56.677 [http-nio-8080-exec-7] ERROR com.buoyantec.TestController - Error
+16:11:02.280 [Thread-12] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+16:11:11.036 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 7512 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+16:11:11.042 [main] INFO  App - No active profile set, falling back to default profiles: default
+16:11:11.877 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:11:11.884 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:11:11.915 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+16:11:13.610 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+16:11:13.630 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+16:11:13.696 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+16:11:14.168 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:11:14.182 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:11:14.182 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:11:14.189 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+16:11:14.295 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:11:14.525 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+16:11:15.885 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:11:15.907 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:11:15.930 [main] INFO  App - Started App in 5.182 seconds (JVM running for 6.139)
+16:11:26.266 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:11:26.376 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzE4MDYsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.VWELzqsdOxiuP2rYZomK7ubxPJVmR0P_jrweCxkGTV8
+16:11:26.490 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:11:29.075 [http-nio-8080-exec-1] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+16:11:29.701 [http-nio-8080-exec-1] INFO  com.buoyantec.TestController - Info
+16:11:29.701 [http-nio-8080-exec-1] WARN  com.buoyantec.TestController - Warn
+16:11:29.701 [http-nio-8080-exec-1] ERROR com.buoyantec.TestController - Error
+16:11:33.788 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzE4MDYsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.VWELzqsdOxiuP2rYZomK7ubxPJVmR0P_jrweCxkGTV8
+16:11:37.051 [http-nio-8080-exec-2] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+16:11:37.392 [http-nio-8080-exec-2] INFO  com.buoyantec.TestController - Info
+16:11:37.393 [http-nio-8080-exec-2] WARN  com.buoyantec.TestController - Warn
+16:11:37.393 [http-nio-8080-exec-2] ERROR com.buoyantec.TestController - Error
+16:11:54.332 [http-nio-8080-exec-4] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzE5MDcsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.9thDRy55TzJkIQTRmim1fr_kogKt_cVKd21wM3aqA2
+16:12:09.687 [http-nio-8080-exec-7] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzE5MjEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.TGLHSjc6_fUnS8sk-uL6LwhWlqyiYZ42bq0OULlGweo
+16:12:11.369 [http-nio-8080-exec-7] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+16:12:12.040 [http-nio-8080-exec-7] INFO  com.buoyantec.TestController - Info
+16:12:12.040 [http-nio-8080-exec-7] WARN  com.buoyantec.TestController - Warn
+16:12:12.040 [http-nio-8080-exec-7] ERROR com.buoyantec.TestController - Error
+16:12:36.699 [http-nio-8080-exec-9] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzE5NDksInVzZXJuYW1lIjoiYjEyd3FzZGEzNyJ9.cNT8ilpXfMqMpgDFlAcJiP3QblN59a3FUKbRlVVhj5o
+16:12:39.186 [http-nio-8080-exec-9] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+16:12:56.925 [http-nio-8080-exec-10] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzE5NDksInVzZXJuYW1lIjoiYjEyd3FzZGEzNyJ9.cNT8ilpXfMqMpgDFlAcJiP3QblN59a3FUKbRlVVhj5o
+16:12:58.691 [http-nio-8080-exec-10] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+16:13:13.899 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+16:17:24.436 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 15040 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+16:17:24.441 [main] INFO  App - No active profile set, falling back to default profiles: default
+16:17:25.286 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:17:25.294 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:17:25.329 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+16:17:26.892 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+16:17:26.915 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+16:17:26.979 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+16:17:27.418 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:17:27.428 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:17:27.429 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:17:27.434 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+16:17:27.526 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:17:27.747 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+16:17:29.074 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:17:29.093 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:17:29.116 [main] INFO  App - Started App in 4.931 seconds (JVM running for 5.833)
+16:17:38.553 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:17:38.681 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzE5NDksInVzZXJuYW1lIjoiYjEyd3FzZGEzNyJ9.cNT8ilpXfMqMpgDFlAcJiP3QblN59a3FUKbRlVVhj5o
+16:17:38.781 [http-nio-8080-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:17:40.899 [http-nio-8080-exec-2] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+16:18:19.571 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIyOTEsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.ZGRA0xx4AcNJghj1buixJbKM_ZSBe2FJ0mjAFMPS42Y
+16:18:53.026 [http-nio-8080-exec-6] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:24:25.843 [http-nio-8080-exec-8] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:25:52.569 [http-nio-8080-exec-10] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:26:03.131 [http-nio-8080-exec-10] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+16:26:17.479 [http-nio-8080-exec-10] INFO  com.buoyantec.TestController - Info
+16:26:17.479 [http-nio-8080-exec-10] WARN  com.buoyantec.TestController - Warn
+16:26:17.479 [http-nio-8080-exec-10] ERROR com.buoyantec.TestController - Error
+16:26:52.528 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:27:13.052 [http-nio-8080-exec-2] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+16:27:14.879 [http-nio-8080-exec-2] INFO  com.buoyantec.TestController - Info
+16:27:14.880 [http-nio-8080-exec-2] WARN  com.buoyantec.TestController - Warn
+16:27:14.880 [http-nio-8080-exec-2] ERROR com.buoyantec.TestController - Error
+16:27:29.528 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:27:35.165 [http-nio-8080-exec-1] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+16:27:35.170 [http-nio-8080-exec-1] INFO  com.buoyantec.TestController - Info
+16:27:35.170 [http-nio-8080-exec-1] WARN  com.buoyantec.TestController - Warn
+16:27:35.170 [http-nio-8080-exec-1] ERROR com.buoyantec.TestController - Error
+16:27:35.210 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+16:27:45.893 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 16368 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+16:27:45.899 [main] INFO  App - No active profile set, falling back to default profiles: default
+16:27:46.942 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:27:46.951 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:27:46.984 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+16:27:48.635 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+16:27:48.661 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+16:27:48.724 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+16:27:49.254 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:27:49.264 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:27:49.265 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:27:49.271 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+16:27:49.380 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:27:49.607 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+16:27:50.979 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:27:50.998 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:27:51.021 [main] INFO  App - Started App in 5.43 seconds (JVM running for 6.384)
+16:28:19.313 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:28:47.522 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:28:47.655 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:29:17.258 [http-nio-8080-exec-1] INFO  com.buoyantec.TestController - Info
+16:29:17.258 [http-nio-8080-exec-1] WARN  com.buoyantec.TestController - Warn
+16:29:17.258 [http-nio-8080-exec-1] ERROR com.buoyantec.TestController - Error
+16:29:45.504 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:30:58.536 [http-nio-8080-exec-2] INFO  com.buoyantec.TestController - Info
+16:30:58.536 [http-nio-8080-exec-2] WARN  com.buoyantec.TestController - Warn
+16:30:58.536 [http-nio-8080-exec-2] ERROR com.buoyantec.TestController - Error
+16:32:22.924 [Thread-15] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+16:32:33.721 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 7836 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+16:32:33.728 [main] INFO  App - No active profile set, falling back to default profiles: default
+16:32:34.587 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:32:34.596 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:32:34.626 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+16:32:36.199 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+16:32:36.246 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+16:32:36.392 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+16:32:36.852 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:32:36.864 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:32:36.865 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:32:36.870 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+16:32:36.975 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:32:37.190 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+16:32:38.502 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:32:38.522 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:32:38.544 [main] INFO  App - Started App in 5.104 seconds (JVM running for 6.129)
+16:33:09.351 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:33:15.394 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:33:15.503 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:33:35.274 [http-nio-8080-exec-1] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@4513e538||用户名时发生错误，请检查传入参数
+16:33:38.571 [http-nio-8080-exec-1] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+16:33:40.623 [http-nio-8080-exec-1] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@4513e538||用户名时发生错误，请检查传入参数
+16:33:41.079 [http-nio-8080-exec-1] INFO  com.buoyantec.TestController - Info
+16:33:41.079 [http-nio-8080-exec-1] WARN  com.buoyantec.TestController - Warn
+16:33:41.080 [http-nio-8080-exec-1] ERROR com.buoyantec.TestController - Error
+16:34:14.073 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:34:31.232 [http-nio-8080-exec-2] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@74d25c1f||用户名时发生错误，请检查传入参数
+16:34:34.168 [http-nio-8080-exec-2] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@74d25c1f||用户名时发生错误，请检查传入参数
+16:34:34.370 [http-nio-8080-exec-2] INFO  com.buoyantec.TestController - Info
+16:34:34.371 [http-nio-8080-exec-2] WARN  com.buoyantec.TestController - Warn
+16:34:34.371 [http-nio-8080-exec-2] ERROR com.buoyantec.TestController - Error
+16:34:55.392 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:35:17.817 [http-nio-8080-exec-3] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@35bc74cf||用户名时发生错误，请检查传入参数
+16:35:21.591 [http-nio-8080-exec-3] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@35bc74cf||用户名时发生错误，请检查传入参数
+16:35:22.056 [http-nio-8080-exec-3] INFO  com.buoyantec.TestController - Info
+16:35:22.056 [http-nio-8080-exec-3] WARN  com.buoyantec.TestController - Warn
+16:35:22.056 [http-nio-8080-exec-3] ERROR com.buoyantec.TestController - Error
+16:35:27.168 [http-nio-8080-exec-4] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:35:28.088 [http-nio-8080-exec-4] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@3c11de3b||用户名时发生错误，请检查传入参数
+16:35:29.369 [http-nio-8080-exec-4] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@3c11de3b||用户名时发生错误，请检查传入参数
+16:35:29.568 [http-nio-8080-exec-4] INFO  com.buoyantec.TestController - Info
+16:35:29.568 [http-nio-8080-exec-4] WARN  com.buoyantec.TestController - Warn
+16:35:29.568 [http-nio-8080-exec-4] ERROR com.buoyantec.TestController - Error
+16:35:52.032 [http-nio-8080-exec-6] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:35:52.888 [http-nio-8080-exec-6] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@167e2b89||用户名时发生错误，请检查传入参数
+16:35:54.178 [http-nio-8080-exec-6] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@167e2b89||用户名时发生错误，请检查传入参数
+16:35:54.425 [http-nio-8080-exec-6] INFO  com.buoyantec.TestController - Info
+16:35:54.425 [http-nio-8080-exec-6] WARN  com.buoyantec.TestController - Warn
+16:35:54.426 [http-nio-8080-exec-6] ERROR com.buoyantec.TestController - Error
+16:36:06.935 [http-nio-8080-exec-5] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:36:07.672 [http-nio-8080-exec-5] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@2d62b5ec||用户名时发生错误，请检查传入参数
+16:36:09.231 [http-nio-8080-exec-5] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@2d62b5ec||用户名时发生错误，请检查传入参数
+16:36:09.664 [http-nio-8080-exec-5] INFO  com.buoyantec.TestController - Info
+16:36:09.664 [http-nio-8080-exec-5] WARN  com.buoyantec.TestController - Warn
+16:36:09.664 [http-nio-8080-exec-5] ERROR com.buoyantec.TestController - Error
+16:36:19.312 [http-nio-8080-exec-7] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:37:55.042 [http-nio-8080-exec-7] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@4aaaa760||用户名时发生错误，请检查传入参数
+16:37:56.288 [http-nio-8080-exec-7] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@4aaaa760||用户名时发生错误，请检查传入参数
+16:37:56.473 [http-nio-8080-exec-7] INFO  com.buoyantec.TestController - Info
+16:37:56.473 [http-nio-8080-exec-7] WARN  com.buoyantec.TestController - Warn
+16:37:56.474 [http-nio-8080-exec-7] ERROR com.buoyantec.TestController - Error
+16:38:01.200 [http-nio-8080-exec-8] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:38:04.184 [http-nio-8080-exec-8] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@4b5853c5||用户名时发生错误，请检查传入参数
+16:38:05.200 [http-nio-8080-exec-8] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@4b5853c5||用户名时发生错误，请检查传入参数
+16:38:05.401 [http-nio-8080-exec-8] INFO  com.buoyantec.TestController - Info
+16:38:05.401 [http-nio-8080-exec-8] WARN  com.buoyantec.TestController - Warn
+16:38:05.401 [http-nio-8080-exec-8] ERROR com.buoyantec.TestController - Error
+16:38:20.489 [http-nio-8080-exec-9] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:38:23.087 [http-nio-8080-exec-9] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@6c87e740||用户名时发生错误，请检查传入参数
+16:38:27.040 [http-nio-8080-exec-9] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@6c87e740||用户名时发生错误，请检查传入参数
+16:38:27.441 [http-nio-8080-exec-9] INFO  com.buoyantec.TestController - Info
+16:38:27.441 [http-nio-8080-exec-9] WARN  com.buoyantec.TestController - Warn
+16:38:27.441 [http-nio-8080-exec-9] ERROR com.buoyantec.TestController - Error
+16:38:51.792 [http-nio-8080-exec-10] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:39:46.632 [http-nio-8080-exec-10] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@667fe14||用户名时发生错误，请检查传入参数
+16:39:46.633 [http-nio-8080-exec-10] ERROR com.buoyantec.Utils.JWTUtil - 去除Token对象：com.buoyantec.dataobject.UserDO@667fe14||用户名时发生错误，请检查传入参数
+16:39:46.633 [http-nio-8080-exec-10] INFO  com.buoyantec.TestController - Info
+16:39:46.633 [http-nio-8080-exec-10] WARN  com.buoyantec.TestController - Warn
+16:39:46.634 [http-nio-8080-exec-10] ERROR com.buoyantec.TestController - Error
+16:39:46.674 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+16:42:09.418 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 4764 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+16:42:09.423 [main] INFO  App - No active profile set, falling back to default profiles: default
+16:42:10.311 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:42:10.320 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:42:10.349 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+16:42:11.942 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+16:42:12.033 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+16:42:12.106 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+16:42:12.569 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:42:12.579 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:42:12.580 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:42:12.586 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+16:42:12.688 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:42:12.916 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+16:42:14.290 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:42:14.311 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:42:14.335 [main] INFO  App - Started App in 5.164 seconds (JVM running for 6.107)
+16:42:21.762 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:42:24.578 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:42:24.702 [http-nio-8080-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:42:41.432 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:44:14.717 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+16:45:22.824 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 13224 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+16:45:22.829 [main] INFO  App - No active profile set, falling back to default profiles: default
+16:45:23.667 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:45:23.675 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:45:23.705 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+16:45:25.279 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+16:45:25.371 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+16:45:25.439 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+16:45:25.926 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:45:25.937 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:45:25.937 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:45:25.944 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+16:45:26.047 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:45:26.276 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+16:46:15.534 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 10184 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+16:46:15.539 [main] INFO  App - No active profile set, falling back to default profiles: default
+16:46:37.902 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 3668 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+16:46:37.908 [main] INFO  App - No active profile set, falling back to default profiles: default
+16:46:38.746 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:46:38.755 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:46:38.786 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+16:46:40.363 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+16:46:40.468 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+16:46:40.532 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+16:46:41.003 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:46:41.013 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:46:41.014 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:46:41.019 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+16:46:41.119 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:46:41.377 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+16:46:42.741 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:46:42.762 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:46:42.787 [main] INFO  App - Started App in 5.126 seconds (JVM running for 6.04)
+16:46:44.688 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:46:48.570 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:46:48.683 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:47:25.873 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:47:47.763 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+16:48:30.440 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 12584 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+16:48:30.446 [main] INFO  App - No active profile set, falling back to default profiles: default
+16:48:31.296 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:48:31.304 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+16:48:31.335 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+16:48:32.891 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+16:48:32.979 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+16:48:33.047 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+16:48:33.503 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:48:33.514 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:48:33.515 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:48:33.523 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+16:48:33.635 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:48:33.869 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+16:48:35.362 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:48:35.382 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:48:35.405 [main] INFO  App - Started App in 5.258 seconds (JVM running for 6.191)
+16:48:36.210 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:48:36.334 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+16:48:36.441 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:48:48.538 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:00:03.810 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:00:08.882 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 13084 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+17:00:08.887 [main] INFO  App - No active profile set, falling back to default profiles: default
+17:00:09.709 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:00:09.718 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:00:09.749 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+17:00:11.427 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+17:00:11.620 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+17:00:11.709 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+17:00:12.185 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:00:12.197 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:00:12.197 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+17:00:12.203 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+17:00:12.311 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:00:12.536 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+17:00:13.875 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:00:13.897 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:00:13.925 [main] INFO  App - Started App in 5.275 seconds (JVM running for 6.278)
+17:00:18.027 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:00:18.144 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:00:18.250 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:00:49.513 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:01:56.918 [Thread-15] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:02:00.771 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 15916 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+17:02:00.777 [main] INFO  App - No active profile set, falling back to default profiles: default
+17:02:01.648 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:02:01.658 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:02:01.693 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+17:02:03.306 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+17:02:03.405 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+17:02:03.474 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+17:02:03.961 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:02:03.978 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:02:03.979 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+17:02:03.985 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+17:02:04.085 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:02:04.321 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+17:02:05.727 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:02:05.748 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:02:05.773 [main] INFO  App - Started App in 5.238 seconds (JVM running for 6.146)
+17:02:06.147 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:02:06.300 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:02:06.450 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:02:24.634 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:03:18.260 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:03:22.170 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 7660 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+17:03:22.175 [main] INFO  App - No active profile set, falling back to default profiles: default
+17:03:23.005 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:03:23.014 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:03:23.046 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+17:03:24.581 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+17:03:24.667 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+17:03:24.733 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+17:03:25.183 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:03:25.193 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:03:25.194 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+17:03:25.200 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+17:03:25.301 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:03:25.526 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+17:03:26.889 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:03:26.911 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:03:26.934 [main] INFO  App - Started App in 4.996 seconds (JVM running for 5.898)
+17:03:28.975 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:03:29.090 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:03:29.220 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:03:38.971 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:05:03.875 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 3468 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+17:05:03.880 [main] INFO  App - No active profile set, falling back to default profiles: default
+17:05:04.732 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:05:04.741 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:05:04.773 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+17:05:06.387 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+17:05:06.479 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+17:05:06.544 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+17:05:07.003 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:05:07.014 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:05:07.014 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+17:05:07.020 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+17:05:07.119 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:05:07.347 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+17:05:08.702 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:05:08.726 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:05:08.750 [main] INFO  App - Started App in 5.136 seconds (JVM running for 6.06)
+17:05:13.131 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:05:13.241 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:05:13.346 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:05:22.391 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:05:42.181 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 13440 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+17:05:42.186 [main] INFO  App - No active profile set, falling back to default profiles: default
+17:05:43.031 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:05:43.043 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:05:43.077 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+17:05:44.687 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+17:05:44.780 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+17:05:44.846 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+17:05:45.318 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:05:45.330 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:05:45.330 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+17:05:45.336 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+17:05:45.438 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:05:45.667 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+17:05:47.066 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:05:47.085 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:05:47.110 [main] INFO  App - Started App in 5.178 seconds (JVM running for 6.12)
+17:05:47.778 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:05:47.895 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:05:47.999 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:05:56.546 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:07:03.076 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:08:13.309 [http-nio-8080-exec-4] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:08:35.784 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:10:57.863 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 15808 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+17:10:57.868 [main] INFO  App - No active profile set, falling back to default profiles: default
+17:10:58.740 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:10:58.749 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:10:58.783 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+17:11:00.369 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+17:11:00.475 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+17:11:00.538 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+17:11:00.996 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:11:01.007 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:11:01.008 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+17:11:01.014 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+17:11:01.118 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:11:01.348 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+17:11:02.701 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:11:02.721 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:11:02.744 [main] INFO  App - Started App in 5.125 seconds (JVM running for 6.06)
+17:11:11.088 [http-nio-8080-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:11:11.198 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:11:11.305 [http-nio-8080-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:11:19.882 [http-nio-8080-exec-2] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+17:11:23.609 [http-nio-8080-exec-2] INFO  com.buoyantec.TestController - Info
+17:11:23.609 [http-nio-8080-exec-2] WARN  com.buoyantec.TestController - Warn
+17:11:23.610 [http-nio-8080-exec-2] ERROR com.buoyantec.TestController - Error
+17:12:28.869 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:12:34.707 [http-nio-8080-exec-3] INFO  com.buoyantec.TestController - Info
+17:12:34.707 [http-nio-8080-exec-3] WARN  com.buoyantec.TestController - Warn
+17:12:34.707 [http-nio-8080-exec-3] ERROR com.buoyantec.TestController - Error
+17:12:42.181 [http-nio-8080-exec-5] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:12:43.966 [http-nio-8080-exec-7] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:12:44.569 [http-nio-8080-exec-9] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzIzMjUsInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.jUCCfOGvLynWu5q4zC6Z3-1pfOwSimbcR1LorquSMCg
+17:13:58.237 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU2MzEsInVzZXJuYW1lIjoiYjEyd3FzZGEzNyJ9.8X5QnwSSB2i7I5vr51H-vNUHkTZvLkFmXGYLSeh14_4
+17:14:00.522 [http-nio-8080-exec-3] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+17:15:15.245 [http-nio-8080-exec-5] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU2MzEsInVzZXJuYW1lIjoiYjEyd3FzZGEzNyJ9.8X5QnwSSB2i7I5vr51H-vNUHkTZvLkFmXGYLSeh14_4
+17:15:20.138 [http-nio-8080-exec-5] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+17:16:52.334 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:16:57.046 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 6924 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+17:16:57.051 [main] INFO  App - No active profile set, falling back to default profiles: default
+17:16:57.891 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:16:57.900 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:16:57.931 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+17:16:59.539 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+17:16:59.611 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+17:16:59.677 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+17:17:00.135 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:17:00.145 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:17:00.145 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+17:17:00.151 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+17:17:00.253 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:17:00.476 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+17:17:01.843 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:17:01.864 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:17:01.887 [main] INFO  App - Started App in 5.106 seconds (JVM running for 6.139)
+17:17:06.778 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:17:06.892 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU2MzEsInVzZXJuYW1lIjoiYjEyd3FzZGEzNyJ9.8X5QnwSSB2i7I5vr51H-vNUHkTZvLkFmXGYLSeh14_4
+17:17:07.000 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:17:09.724 [http-nio-8080-exec-1] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+17:17:44.268 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU2MzEsInVzZXJuYW1lIjoiYjEyd3FzZGEzNyJ9.8X5QnwSSB2i7I5vr51H-vNUHkTZvLkFmXGYLSeh14_4
+17:17:45.054 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU2MzEsInVzZXJuYW1lIjoiYjEyd3FzZGEzNyJ9.8X5QnwSSB2i7I5vr51H-vNUHkTZvLkFmXGYLSeh14_4
+17:17:55.696 [http-nio-8080-exec-4] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU2MzEsInVzZXJuYW1lIjoiYjEyd3FzZGEzNyJ9.8X5QnwSSB2i7I5vr51H-vNUHkTZvLkFmXGYLSeh14_4
+17:18:13.083 [http-nio-8080-exec-4] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+17:18:53.028 [http-nio-8080-exec-5] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:18:56.747 [http-nio-8080-exec-5] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+17:19:07.824 [http-nio-8080-exec-5] INFO  com.buoyantec.TestController - Info
+17:19:07.824 [http-nio-8080-exec-5] WARN  com.buoyantec.TestController - Warn
+17:19:07.824 [http-nio-8080-exec-5] ERROR com.buoyantec.TestController - Error
+17:20:35.280 [http-nio-8080-exec-7] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:20:35.292 [http-nio-8080-exec-7] INFO  com.buoyantec.TestController - Info
+17:20:35.292 [http-nio-8080-exec-7] WARN  com.buoyantec.TestController - Warn
+17:20:35.292 [http-nio-8080-exec-7] ERROR com.buoyantec.TestController - Error
+17:20:35.883 [http-nio-8080-exec-9] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:20:35.887 [http-nio-8080-exec-9] INFO  com.buoyantec.TestController - Info
+17:20:35.887 [http-nio-8080-exec-9] WARN  com.buoyantec.TestController - Warn
+17:20:35.887 [http-nio-8080-exec-9] ERROR com.buoyantec.TestController - Error
+17:20:36.385 [http-nio-8080-exec-8] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:20:36.390 [http-nio-8080-exec-8] INFO  com.buoyantec.TestController - Info
+17:20:36.390 [http-nio-8080-exec-8] WARN  com.buoyantec.TestController - Warn
+17:20:36.390 [http-nio-8080-exec-8] ERROR com.buoyantec.TestController - Error
+17:20:36.797 [http-nio-8080-exec-10] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:20:36.802 [http-nio-8080-exec-10] INFO  com.buoyantec.TestController - Info
+17:20:36.802 [http-nio-8080-exec-10] WARN  com.buoyantec.TestController - Warn
+17:20:36.802 [http-nio-8080-exec-10] ERROR com.buoyantec.TestController - Error
+17:20:37.161 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:20:37.166 [http-nio-8080-exec-1] INFO  com.buoyantec.TestController - Info
+17:20:37.166 [http-nio-8080-exec-1] WARN  com.buoyantec.TestController - Warn
+17:20:37.167 [http-nio-8080-exec-1] ERROR com.buoyantec.TestController - Error
+17:21:43.922 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:21:47.730 [http-nio-8080-exec-3] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+17:24:11.648 [http-nio-8080-exec-3] INFO  com.buoyantec.TestController - Info
+17:24:11.649 [http-nio-8080-exec-3] WARN  com.buoyantec.TestController - Warn
+17:24:11.649 [http-nio-8080-exec-3] ERROR com.buoyantec.TestController - Error
+17:24:30.149 [http-nio-8080-exec-4] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:24:30.156 [http-nio-8080-exec-4] INFO  com.buoyantec.TestController - Info
+17:24:30.156 [http-nio-8080-exec-4] WARN  com.buoyantec.TestController - Warn
+17:24:30.156 [http-nio-8080-exec-4] ERROR com.buoyantec.TestController - Error
+17:24:41.733 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:25:29.454 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 14644 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+17:25:29.460 [main] INFO  App - No active profile set, falling back to default profiles: default
+17:25:30.293 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:25:30.302 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+
+17:25:30.332 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+
+17:25:31.902 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+
+17:25:31.971 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+
+17:25:32.038 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+
+17:25:32.490 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+17:25:32.501 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+17:25:32.502 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+17:25:32.508 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+17:25:32.609 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:25:32.852 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+17:25:34.255 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+17:25:34.276 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+17:25:34.300 [main] INFO  App - Started App in 5.098 seconds (JVM running for 6.022)
+17:25:35.725 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:25:35.835 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:25:35.936 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+17:25:39.491 [http-nio-8080-exec-1] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+17:26:38.811 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:26:39.466 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:27:52.068 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:27:54.456 [http-nio-8080-exec-4] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:27:55.006 [http-nio-8080-exec-5] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:27:56.676 [http-nio-8080-exec-6] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:27:57.250 [http-nio-8080-exec-7] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:29:02.825 [http-nio-8080-exec-9] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:29:04.429 [http-nio-8080-exec-10] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:29:05.102 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:29:05.415 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:29:16.283 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:29:18.250 [http-nio-8080-exec-3] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+17:29:25.367 [http-nio-8080-exec-4] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:29:25.974 [http-nio-8080-exec-5] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:29:26.358 [http-nio-8080-exec-6] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:29:28.616 [http-nio-8080-exec-7] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:29:29.183 [http-nio-8080-exec-8] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:30:23.239 [http-nio-8080-exec-9] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:30:23.820 [http-nio-8080-exec-10] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:30:25.105 [http-nio-8080-exec-1] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:30:25.645 [http-nio-8080-exec-2] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:30:45.184 [http-nio-8080-exec-3] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:30:50.716 [http-nio-8080-exec-3] INFO  com.buoyantec.service.impl.UserRightRelationServiceImpl - :
+17:30:57.837 [http-nio-8080-exec-4] INFO  com.buoyantec.AuthRealm - eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NzQ5NzU1NTksInVzZXJuYW1lIjoiYjEyMzQ1NjAzNyJ9.cuotTOWMmitFSo1I158k8eKR5PUgk49_9UoePMxfaIc
+17:31:01.620 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

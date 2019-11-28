@@ -53,7 +53,13 @@ public class AuthRealm extends AuthorizingRealm {
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
-        UserDO userDO=(UserDO) principalCollection.getPrimaryPrincipal();
+        UserDO userDO = null;
+       try{
+           userDO=(UserDO) principalCollection.getPrimaryPrincipal();
+       }catch (Exception e){
+            userDO=userService.FindByUserName(JWTUtil.GetUserName(principalCollection.toString()));
+       }
+
         if(userDO==null){
             try {
                 throw new BusinessException(EmBusinessError.PERMISSIONS_NOT_INFO,"无此用户");
@@ -136,7 +142,7 @@ public class AuthRealm extends AuthorizingRealm {
         } catch (BusinessException e) {
             throw new AuthenticationException("Token无效或已过期");
         }
-        SimpleAuthenticationInfo info=new SimpleAuthenticationInfo(user,accessToken,this.getName());
+        SimpleAuthenticationInfo info=new SimpleAuthenticationInfo(accessToken,accessToken,this.getName());
         return info;
     }
 

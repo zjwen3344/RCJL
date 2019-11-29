@@ -1,16 +1,12 @@
 package com.buoyantec;
 
-import com.auth0.jwt.JWT;
-import com.auth0.jwt.interfaces.DecodedJWT;
+
 import com.buoyantec.Utils.JWTUtil;
 import com.buoyantec.Utils.JedisUtil;
 import com.buoyantec.Utils.SerializableUtil;
-import com.buoyantec.dataobject.UserDO;
 import com.buoyantec.error.BusinessException;
-import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.cache.Cache;
 import org.apache.shiro.cache.CacheException;
-import org.apache.shiro.subject.SimplePrincipalCollection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

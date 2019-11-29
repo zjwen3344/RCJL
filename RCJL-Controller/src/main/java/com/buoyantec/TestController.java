@@ -1,16 +1,19 @@
 package com.buoyantec;
 
+import com.buoyantec.Utils.Kaptcha.CaptchaServiceUtil;
 import com.buoyantec.Utils.RegexUtils;
 import com.buoyantec.error.BusinessException;
 import com.buoyantec.error.EmBusinessError;
 import com.buoyantec.response.CommonReturnType;
 import com.buoyantec.service.UserService;
+import com.google.code.kaptcha.impl.DefaultKaptcha;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,6 +26,7 @@ import java.util.Map;
 
 
 
+
 //将UserController.class  设置成控制器对象，并且控制器名称是User
 @RestController("Test")
 //设置控制器的URL
@@ -30,6 +34,7 @@ import java.util.Map;
 public class TestController {
 
 protected  final Logger logger = LoggerFactory.getLogger(TestController.class);
+
 
     @Autowired
     private UserService userService;
@@ -77,5 +82,8 @@ protected  final Logger logger = LoggerFactory.getLogger(TestController.class);
 
         return map;
     }
+
+
+
 
 }

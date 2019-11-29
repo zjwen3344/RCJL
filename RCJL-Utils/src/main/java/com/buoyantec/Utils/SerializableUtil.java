@@ -29,7 +29,9 @@ public class SerializableUtil {
         try {
             baos = new ByteArrayOutputStream();
             oos = new ObjectOutputStream(baos);
+            baos.reset();
             oos.writeObject(object);
+
             byte[] bytes = baos.toByteArray();
             return bytes;
         } catch (IOException e) {

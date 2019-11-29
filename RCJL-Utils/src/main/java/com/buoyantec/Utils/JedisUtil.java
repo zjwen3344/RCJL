@@ -46,7 +46,6 @@ public class JedisUtil {
      * 获取Jedis实例
      * @param
      * @return redis.clients.jedis.Jedis
-     * @author Wang926454
      * @date 2018/9/4 15:47
      */
     public static synchronized Jedis getJedis() throws BusinessException {
@@ -66,7 +65,6 @@ public class JedisUtil {
      * 释放Jedis资源
      * @param
      * @return void
-     * @author Wang926454
      * @date 2018/9/5 9:16
      */
     public static void closePool() throws BusinessException {
@@ -81,7 +79,6 @@ public class JedisUtil {
      * 获取redis键值-object
      * @param key
      * @return java.lang.Object
-     * @author Wang926454
      * @date 2018/9/4 15:47
      */
     public static Object getObject(String key) throws BusinessException {
@@ -107,7 +104,6 @@ public class JedisUtil {
      * @param key
      * @param value
      * @return java.lang.String
-     * @author Wang926454
      * @date 2018/9/4 15:49
      */
     public static String setObject(String key, Object value) throws BusinessException {
@@ -125,12 +121,27 @@ public class JedisUtil {
     }
 
     /**
+     * 存入对象，验证码用
+     * @param key
+     * @param value
+     * @param time
+     * @return
+     */
+    public  static  String setObject(String key,Object value,String time){
+        Jedis jedis=null;
+        jedis=jedisPool.getResource();
+        return  jedis.set(key,value.toString(),time.toString());
+    }
+
+
+
+
+    /**
      * 设置redis键值-object-expiretime
      * @param key
      * @param value
      * @param expiretime
      * @return java.lang.String
-     * @author Wang926454
      * @date 2018/9/4 15:50
      */
     public static String setObject(String key, Object value, int expiretime) throws BusinessException {
@@ -138,7 +149,36 @@ public class JedisUtil {
         Jedis jedis = null;
         try {
             jedis = jedisPool.getResource();
-            result = jedis.set(key.getBytes(), SerializableUtil.serializable(value));
+            byte[]  SetValue=SerializableUtil.serializable(value);
+            result = jedis.set(key.getBytes(), SetValue);
+            if(OK.equals(result)) {
+                jedis.expire(key.getBytes(), expiretime);
+            }
+            return result;
+        } catch (Exception e) {
+            throw new BusinessException(EmBusinessError.USER_NOT_EXIST,"设置Redis键值setObject方法异常:key=" + key + " value=" + value + " cause=" + e.getMessage());
+        } finally {
+            if(jedis != null) {
+                jedis.close();
+            }
+        }
+    }
+
+
+    /**
+     * 设置redis键值-object-expiretime
+     * @param key
+     * @param value
+     * @param expiretime
+     * @return java.lang.String
+     * @date 2018/9/4 15:50
+     */
+    public static String setObjectCaptcha(String key, String value, int expiretime) throws BusinessException {
+        String result = "";
+        Jedis jedis = null;
+        try {
+            jedis = jedisPool.getResource();
+            result = jedis.set(key.getBytes(), value.getBytes());
             if(OK.equals(result)) {
                 jedis.expire(key.getBytes(), expiretime);
             }
@@ -156,7 +196,6 @@ public class JedisUtil {
      * 获取redis键值-Json
      * @param key
      * @return java.lang.Object
-     * @author Wang926454
      * @date 2018/9/4 15:47
      */
     public static String getJson(String key) throws BusinessException {
@@ -178,7 +217,6 @@ public class JedisUtil {
      * @param key
      * @param value
      * @return java.lang.String
-     * @author Wang926454
      * @date 2018/9/4 15:49
      */
     public static String setJson(String key, String value) throws BusinessException {
@@ -201,7 +239,6 @@ public class JedisUtil {
      * @param value
      * @param expiretime
      * @return java.lang.String
-     * @author Wang926454
      * @date 2018/9/4 15:50
      */
     public static String setJson(String key, String value, int expiretime) throws BusinessException {
@@ -227,7 +264,6 @@ public class JedisUtil {
      * 删除key
      * @param key
      * @return java.lang.Long
-     * @author Wang926454
      * @date 2018/9/4 15:50
      */
     public static Long delKey(String key) throws BusinessException {
@@ -248,7 +284,6 @@ public class JedisUtil {
      * key是否存在
      * @param key
      * @return java.lang.Boolean
-     * @author Wang926454
      * @date 2018/9/4 15:51
      */
     public static Boolean exists(String key) throws BusinessException {
@@ -269,7 +304,6 @@ public class JedisUtil {
      * 模糊查询获取key集合
      * @param key
      * @return java.util.Set<java.lang.String>
-     * @author Wang926454
      * @date 2018/9/6 9:43
      */
     public static Set<String> keysS(String key) throws BusinessException {
@@ -290,7 +324,6 @@ public class JedisUtil {
      * 模糊查询获取key集合
      * @param key
      * @return java.util.Set<java.lang.String>
-     * @author Wang926454
      * @date 2018/9/6 9:43
      */
     public static Set<byte[]> keysB(String key) throws BusinessException {
@@ -311,7 +344,6 @@ public class JedisUtil {
      * 获取过期剩余时间
      * @param key
      * @return java.lang.String
-     * @author Wang926454
      * @date 2018/9/11 16:26
      */
     public static Long getExpireTime(String key) throws BusinessException {

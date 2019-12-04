@@ -1,24 +1,26 @@
-15:52:52.563 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 13660 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
-15:52:52.568 [main] INFO  App - No active profile set, falling back to default profiles: default
-15:52:53.467 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+16:12:27.860 [main] INFO  App - Starting App on DESKTOP-2EMH2EM with PID 16232 (E:\RCJL\RCJL-Controller\target\classes started by zcl in E:\RCJL)
+16:12:27.865 [main] INFO  App - No active profile set, falling back to default profiles: default
+16:12:28.761 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
 
-15:52:53.478 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
+16:12:28.770 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化defaultAdvisorAutoProxyCreator！
 
-15:52:53.510 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
+16:12:28.803 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化AuthRealm成功!!
 
-15:52:54.377 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
+16:12:29.765 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化securityManager成功！
 
-15:52:54.966 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
+16:12:29.783 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化shiroFilterFactoryBean成功
 
-15:52:55.029 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
+16:12:29.834 [main] INFO  com.buoyantec.ShiroConfiguration - 初始化authorizationAttributeSourceAdvisor成功！
 
-15:52:55.474 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-15:52:55.485 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-15:52:55.485 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
-15:52:55.492 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
-15:52:55.592 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-15:52:55.843 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
-15:52:57.240 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-15:52:57.261 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
-15:52:57.284 [main] INFO  App - Started App in 4.978 seconds (JVM running for 5.979)
-15:53:05.945 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:12:30.170 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+16:12:30.178 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:12:30.179 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+16:12:30.182 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;E:\Code\apache-maven-3.6.2\bin;E:\mysql-5.7.27-winx64\bin;C:\Users\zcl\AppData\Local\Microsoft\WindowsApps;;C:\Users\zcl\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.3\bin;;.]
+16:12:30.270 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:12:30.468 [main] INFO  com.buoyantec.JedisConfig - 初始化Redis连接池JedisPool成功! Redis地址: 127.0.0.1:6379
+16:12:31.582 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+16:12:31.591 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:12:31.608 [main] INFO  App - Started App in 4.059 seconds (JVM running for 5.051)
+16:12:47.456 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:12:47.594 [http-nio-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:39:24.683 [Thread-12] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

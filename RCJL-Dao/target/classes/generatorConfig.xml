@@ -48,115 +48,115 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
-        <!--生成对应表及类名-->
+<!--        生成对应表及类名-->
         <table tableName="t_attachment" domainObjectName="attachmentDO">
             <generatedKey column="ta_ID" sqlStatement="Mysql" identity="true"></generatedKey>
         </table>
 
-        <table tableName="t_user" domainObjectName="UserDO">
+<!--        <table tableName="t_user" domainObjectName="UserDO">-->
 
-            <generatedKey column="tu_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--            <generatedKey column="tu_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_class" domainObjectName="ClassDO">
-            <generatedKey column="tc_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_class" domainObjectName="ClassDO">-->
+<!--            <generatedKey column="tc_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_classright" domainObjectName="classrightDO">
-            <generatedKey column="tc_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_classright" domainObjectName="classrightDO">-->
+<!--            <generatedKey column="tc_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_colleges" domainObjectName="collegesDO">
-            <generatedKey column="tc_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_colleges" domainObjectName="collegesDO">-->
+<!--            <generatedKey column="tc_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_collegesright" domainObjectName="collegesrightDO">
-            <generatedKey column="tc_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_collegesright" domainObjectName="collegesrightDO">-->
+<!--            <generatedKey column="tc_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_enterprise" domainObjectName="enterpriseDO">
-            <generatedKey column="te_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_enterprise" domainObjectName="enterpriseDO">-->
+<!--            <generatedKey column="te_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_group" domainObjectName="groupDO">
-            <generatedKey column="tg_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_group" domainObjectName="groupDO">-->
+<!--            <generatedKey column="tg_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_grouprightrelation" domainObjectName="grouprightrelationDO">
-            <generatedKey column="tgr_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_grouprightrelation" domainObjectName="grouprightrelationDO">-->
+<!--            <generatedKey column="tgr_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_grouprolerelation" domainObjectName="grouprolerelationDO">
-            <generatedKey column="tgr_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_grouprolerelation" domainObjectName="grouprolerelationDO">-->
+<!--            <generatedKey column="tgr_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_log" domainObjectName="logDO">
-            <generatedKey column="log_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_log" domainObjectName="logDO">-->
+<!--            <generatedKey column="log_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_major" domainObjectName="majorDO">
-            <generatedKey column="tm_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_major" domainObjectName="majorDO">-->
+<!--            <generatedKey column="tm_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_majorright" domainObjectName="majorrightDO">
-            <generatedKey column="tm_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_majorright" domainObjectName="majorrightDO">-->
+<!--            <generatedKey column="tm_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_news" domainObjectName="newsDO">
-            <generatedKey column="tn_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_news" domainObjectName="newsDO">-->
+<!--            <generatedKey column="tn_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_news_class" domainObjectName="news_classDO">
-            <generatedKey column="tnc_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_news_class" domainObjectName="news_classDO">-->
+<!--            <generatedKey column="tnc_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_organization" domainObjectName="organizationDO">
-            <generatedKey column="to_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_organization" domainObjectName="organizationDO">-->
+<!--            <generatedKey column="to_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_permission" domainObjectName="permissionDO">
-            <generatedKey column="tr_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_permission" domainObjectName="permissionDO">-->
+<!--            <generatedKey column="tr_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_role" domainObjectName="roleDO">
-            <generatedKey column="tr_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_role" domainObjectName="roleDO">-->
+<!--            <generatedKey column="tr_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_rolerightrelation" domainObjectName="rolerightrelationDO">
-            <generatedKey column="trr_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_rolerightrelation" domainObjectName="rolerightrelationDO">-->
+<!--            <generatedKey column="trr_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_school" domainObjectName="schoolDO">
-            <generatedKey column="ts_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_school" domainObjectName="schoolDO">-->
+<!--            <generatedKey column="ts_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_schoolright" domainObjectName="schoolrightDO">
-            <generatedKey column="ts_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_schoolright" domainObjectName="schoolrightDO">-->
+<!--            <generatedKey column="ts_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_speyears" domainObjectName="speyearsDO">
-            <generatedKey column="ts_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_speyears" domainObjectName="speyearsDO">-->
+<!--            <generatedKey column="ts_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_userep" domainObjectName="userepDO">
-            <generatedKey column="ti_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_userep" domainObjectName="userepDO">-->
+<!--            <generatedKey column="ti_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_usergrouprelation" domainObjectName="usergrouprelationDO">
-            <generatedKey column="tug_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_usergrouprelation" domainObjectName="usergrouprelationDO">-->
+<!--            <generatedKey column="tug_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_userrightrelation" domainObjectName="userrightrelationDO">
-            <generatedKey column="tur_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_userrightrelation" domainObjectName="userrightrelationDO">-->
+<!--            <generatedKey column="tur_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_userrolerelation" domainObjectName="userrolerelationDO">
-            <generatedKey column="tur_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_userrolerelation" domainObjectName="userrolerelationDO">-->
+<!--            <generatedKey column="tur_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
-        <table tableName="t_token" domainObjectName="tokenDO">
-            <generatedKey column="tk_id" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_token" domainObjectName="tokenDO">-->
+<!--            <generatedKey column="tk_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
 
     </context>

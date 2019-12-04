@@ -5,9 +5,7 @@ import com.buoyantec.error.BusinessException;
 import com.buoyantec.response.CommonReturnType;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 
@@ -33,6 +31,12 @@ public class CaptchaController {
     @ResponseBody
     public CommonReturnType GetCaptcha() throws IOException, BusinessException {
         return  CommonReturnType.create(  CaptchaServiceUtil.createToken(50*60,producer));
+    }
+
+    @RequestMapping("/CheckCode")
+    @ResponseBody
+    public CommonReturnType checkCodeToken(@RequestParam(name = "Token") String Token,@RequestParam(name = "Code") String Code) throws BusinessException {
+        return  CommonReturnType.create(CaptchaServiceUtil.checkCodeToken(Token,Code));
     }
 
 

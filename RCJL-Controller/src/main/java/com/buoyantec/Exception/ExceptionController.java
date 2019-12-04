@@ -1,5 +1,6 @@
 package com.buoyantec.Exception;
 
+import com.buoyantec.BaseController;
 import com.buoyantec.error.BusinessException;
 import com.buoyantec.response.CommonReturnType;
 import org.apache.shiro.ShiroException;
@@ -18,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
  * @create: 2019-11-28 10:22
  **/
 @RestControllerAdvice
-public class ExceptionController {
+public class ExceptionController   {
 
 
     // 捕捉shiro的异常

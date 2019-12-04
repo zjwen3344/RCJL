@@ -8,7 +8,6 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.UnsupportedEncodingException;
 import java.util.Date;
 
 /**
@@ -71,7 +70,7 @@ public class JWTUtil {
             DecodedJWT jwt=JWT.decode(token);
             return  jwt.getClaim("username").asString();
         }catch (JWTDecodeException e){
-            logger.error("去出Token对象："+token+"||用户名时发生错误，请检查传入参数");
+            logger.error("取出Token对象："+token+"||用户名时发生错误，请检查传入参数");
             return  null;
 
         }

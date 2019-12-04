@@ -46,7 +46,7 @@ public class JedisUtil {
      * 获取Jedis实例
      * @param
      * @return redis.clients.jedis.Jedis
-     * @date 2018/9/4 15:47
+     * @date 2019-12-3 13:47:26
      */
     public static synchronized Jedis getJedis() throws BusinessException {
         try {
@@ -65,7 +65,7 @@ public class JedisUtil {
      * 释放Jedis资源
      * @param
      * @return void
-     * @date 2018/9/5 9:16
+     * @date 2019-12-3 13:47:19
      */
     public static void closePool() throws BusinessException {
         try {
@@ -79,7 +79,7 @@ public class JedisUtil {
      * 获取redis键值-object
      * @param key
      * @return java.lang.Object
-     * @date 2018/9/4 15:47
+     * @date 2019-12-3 13:47:32
      */
     public static Object getObject(String key) throws BusinessException {
         Jedis jedis = null;
@@ -104,7 +104,7 @@ public class JedisUtil {
      * @param key
      * @param value
      * @return java.lang.String
-     * @date 2018/9/4 15:49
+     * @date 2019-12-3 13:47:13
      */
     public static String setObject(String key, Object value) throws BusinessException {
         Jedis jedis = null;
@@ -142,7 +142,7 @@ public class JedisUtil {
      * @param value
      * @param expiretime
      * @return java.lang.String
-     * @date 2018/9/4 15:50
+     * @date 2019-12-3 13:47:39
      */
     public static String setObject(String key, Object value, int expiretime) throws BusinessException {
         String result = "";
@@ -171,7 +171,7 @@ public class JedisUtil {
      * @param value
      * @param expiretime
      * @return java.lang.String
-     * @date 2018/9/4 15:50
+     * @date 2019-12-3 13:47:41
      */
     public static String setObjectCaptcha(String key, String value, int expiretime) throws BusinessException {
         String result = "";
@@ -196,7 +196,7 @@ public class JedisUtil {
      * 获取redis键值-Json
      * @param key
      * @return java.lang.Object
-     * @date 2018/9/4 15:47
+     * @date 2019-12-3 13:47:47
      */
     public static String getJson(String key) throws BusinessException {
         Jedis jedis = null;
@@ -217,7 +217,7 @@ public class JedisUtil {
      * @param key
      * @param value
      * @return java.lang.String
-     * @date 2018/9/4 15:49
+     * @date 2019-12-3 13:47:50
      */
     public static String setJson(String key, String value) throws BusinessException {
         Jedis jedis = null;
@@ -239,7 +239,7 @@ public class JedisUtil {
      * @param value
      * @param expiretime
      * @return java.lang.String
-     * @date 2018/9/4 15:50
+     * @date 2019-12-3 13:47:53
      */
     public static String setJson(String key, String value, int expiretime) throws BusinessException {
         String result = "";
@@ -264,7 +264,7 @@ public class JedisUtil {
      * 删除key
      * @param key
      * @return java.lang.Long
-     * @date 2018/9/4 15:50
+     * @date 2019-12-3 13:47:58
      */
     public static Long delKey(String key) throws BusinessException {
         Jedis jedis = null;
@@ -284,7 +284,7 @@ public class JedisUtil {
      * key是否存在
      * @param key
      * @return java.lang.Boolean
-     * @date 2018/9/4 15:51
+     * @date 2019-12-3 13:48:01
      */
     public static Boolean exists(String key) throws BusinessException {
         Jedis jedis = null;
@@ -304,7 +304,7 @@ public class JedisUtil {
      * 模糊查询获取key集合
      * @param key
      * @return java.util.Set<java.lang.String>
-     * @date 2018/9/6 9:43
+     * @date 2019-12-3 13:48:03
      */
     public static Set<String> keysS(String key) throws BusinessException {
         Jedis jedis = null;
@@ -324,7 +324,7 @@ public class JedisUtil {
      * 模糊查询获取key集合
      * @param key
      * @return java.util.Set<java.lang.String>
-     * @date 2018/9/6 9:43
+     * @date 2019-12-3 13:48:06
      */
     public static Set<byte[]> keysB(String key) throws BusinessException {
         Jedis jedis = null;
@@ -344,7 +344,7 @@ public class JedisUtil {
      * 获取过期剩余时间
      * @param key
      * @return java.lang.String
-     * @date 2018/9/11 16:26
+     * @date 2019-12-3 13:48:09
      */
     public static Long getExpireTime(String key) throws BusinessException {
         Long result = -2L;

@@ -1,9 +1,7 @@
 package com.buoyantec.Utils;
 import com.buoyantec.error.BusinessException;
 import com.buoyantec.error.EmBusinessError;
-import jdk.management.resource.internal.inst.StaticInstrumentation;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 import java.io.*;
 /**
@@ -13,8 +11,6 @@ import java.io.*;
  * @create: 2019-11-28 15:06
  **/
 public class SerializableUtil {
-
-
 
     /**
      * 序列化
@@ -29,14 +25,12 @@ public class SerializableUtil {
         try {
             baos = new ByteArrayOutputStream();
             oos = new ObjectOutputStream(baos);
-            baos.reset();
             oos.writeObject(object);
-
             byte[] bytes = baos.toByteArray();
             return bytes;
         } catch (IOException e) {
             e.printStackTrace();
-          throw new BusinessException(EmBusinessError.USER_NOT_EXIST,"SerializableUtil工具类序列化出现IOException异常");
+            throw new BusinessException(EmBusinessError.SYSTEM_ERROR,"SerializableUtil工具类序列化出现IOException异常");
         } finally {
             try {
                 if(oos != null) {
@@ -50,7 +44,6 @@ public class SerializableUtil {
             }
         }
     }
-
 
     /**
      * 反序列化
@@ -68,10 +61,10 @@ public class SerializableUtil {
             return ois.readObject();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
-           throw  new BusinessException (EmBusinessError.USER_NOT_EXIST,"SerializableUtil工具类反序列化出现ClassNotFoundException异常");
+            throw new BusinessException(EmBusinessError.SYSTEM_ERROR,"SerializableUtil工具类反序列化出现ClassNotFoundException异常");
         } catch (IOException e) {
             e.printStackTrace();
-           throw new BusinessException(EmBusinessError.USER_NOT_EXIST,"SerializableUtil工具类反序列化出现IOException异常");
+            throw new BusinessException(EmBusinessError.SYSTEM_ERROR,"SerializableUtil工具类反序列化出现IOException异常");
         } finally {
             try {
                 if(ois != null) {

@@ -1,6 +1,7 @@
 package com.buoyantec.service;
 
 import com.buoyantec.dataobject.permissionDO;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 

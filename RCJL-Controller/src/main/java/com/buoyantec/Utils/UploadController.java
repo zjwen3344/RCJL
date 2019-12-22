@@ -36,8 +36,8 @@ public class UploadController extends BaseController {
     @Autowired
     private AttachmentService attachmentService;
 
-    @PostMapping("/Image")
-    @RequiresPermissions({"UploadImage"})
+    @PostMapping("/UploadFile")
+    @RequiresPermissions({"UploadFile"})
     public CommonReturnType importData(MultipartFile file, HttpServletRequest req) throws BusinessException  {
         String loginAccount=JWTUtil.GetUserName(SecurityUtils.getSubject().getPrincipal().toString());
         try{

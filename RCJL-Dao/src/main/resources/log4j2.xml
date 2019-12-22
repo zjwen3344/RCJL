@@ -86,6 +86,15 @@
             <AppenderRef ref="Console"/>
         </Logger>
 
+        <!--记录druid-sql的记录-->
+        <logger name="druid.sql.Statement" level="debug" additivity="false">
+            <appender-ref ref="druidSqlRollingFile"/>
+        </logger>
+        <logger name="druid.sql.Statement" level="debug" additivity="false">
+            <appender-ref ref="druidSqlRollingFile"/>
+        </logger>
+
+
         <root level="info">
             <appender-ref ref="Console"/>
             <appender-ref ref="Filelog"/>

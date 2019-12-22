@@ -49,9 +49,9 @@
         </javaClientGenerator>
 
 <!--        生成对应表及类名-->
-        <table tableName="t_attachment" domainObjectName="attachmentDO">
-            <generatedKey column="ta_ID" sqlStatement="Mysql" identity="true"></generatedKey>
-        </table>
+<!--        <table tableName="t_attachment" domainObjectName="attachmentDO">-->
+<!--            <generatedKey column="ta_ID" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
 
 <!--        <table tableName="t_user" domainObjectName="UserDO">-->
 
@@ -102,9 +102,10 @@
 <!--            <generatedKey column="tm_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
 <!--        </table>-->
 
-<!--        <table tableName="t_news" domainObjectName="newsDO">-->
-<!--            <generatedKey column="tn_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
-<!--        </table>-->
+        <table tableName="t_news" domainObjectName="newsDO">
+            <generatedKey column="tn_id" sqlStatement="Mysql" identity="true"></generatedKey>
+            <columnOverride column="tn_Content" jdbcType="VARCHAR"></columnOverride>
+        </table>
 
 <!--        <table tableName="t_news_class" domainObjectName="news_classDO">-->
 <!--            <generatedKey column="tnc_id" sqlStatement="Mysql" identity="true"></generatedKey>-->

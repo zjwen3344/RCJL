@@ -34,7 +34,7 @@ public interface UserService {
      * @param Password 密码
      * @return 如果返回了UserDo对象则表示此用户名与密码正确，反之则错误
      */
-    UserDO Login(String UserName,String Password);
+    UserDO Login(String UserName,String Password,String checkCodeID,String checkCode) throws BusinessException;
 
     /**
      * 通过用户名查找用户
@@ -42,5 +42,14 @@ public interface UserService {
      * @return
      */
     UserDO FindByUserName(String name);
+
+    /**
+     * 通过token获取User信息
+     * @param token
+     * @return
+     */
+    UserDO FindByUserToken(String token) throws BusinessException;
+
+
 
 }

@@ -49,22 +49,22 @@ public class CaptchaServiceUtil {
 
     /**
      * 校验验证码
-     * @param token  验证码token
-     * @param textStr  验证码值
+     * @param ID  验证码token
+     * @param Code  验证码值
      * @return
      * @throws BusinessException
      */
-    public static boolean checkCodeToken(String token,String textStr) throws BusinessException {
-        if(StringUtils.isEmpty(token)||StringUtils.isEmpty(textStr)){
+    public static boolean checkCodeToken(String ID,String Code) throws BusinessException {
+        if(StringUtils.isEmpty(ID)||StringUtils.isEmpty(Code)){
             return false;
 
         }
-        String value=JedisUtil.getJson(token);
-        JedisUtil.delKey(token);
+        String value=JedisUtil.getJson(ID);
+        JedisUtil.delKey(ID);
         if(value==null){
             return false;
         }
-        if(textStr.equals(value)){
+        if(Code.equals(value)){
             return true;
         }
         return false;

@@ -30,6 +30,7 @@ public class CaptchaController {
     @RequestMapping("/GetCaptcha")
     @ResponseBody
     public CommonReturnType GetCaptcha() throws IOException, BusinessException {
+        System.out.printf("获取验证码");
         return  CommonReturnType.create(  CaptchaServiceUtil.createToken(50*60,producer));
     }
 
@@ -37,6 +38,9 @@ public class CaptchaController {
     @ResponseBody
     public CommonReturnType checkCodeToken(@RequestParam(name = "Token") String Token,@RequestParam(name = "Code") String Code) throws BusinessException {
         return  CommonReturnType.create(CaptchaServiceUtil.checkCodeToken(Token,Code));
+
+
+
     }
 
 

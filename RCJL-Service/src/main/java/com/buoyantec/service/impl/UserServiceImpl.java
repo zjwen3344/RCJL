@@ -1,5 +1,6 @@
 package com.buoyantec.service.impl;
 
+import com.buoyantec.Utils.Kaptcha.CaptchaServiceUtil;
 import com.buoyantec.Utils.MyBeanUtils;
 import com.buoyantec.dao.UserDOMapper;
 import com.buoyantec.dataobject.UserDO;
@@ -8,6 +9,7 @@ import com.buoyantec.dataobject.enterpriseDO;
 import com.buoyantec.error.BusinessException;
 import com.buoyantec.error.EmBusinessError;
 import com.buoyantec.service.EnterpriseService;
+import com.buoyantec.service.TokenService;
 import com.buoyantec.service.UserEPService;
 import com.buoyantec.service.UserService;
 import com.buoyantec.service.model.UserModel;
@@ -25,7 +27,8 @@ public class UserServiceImpl implements UserService {
     private EnterpriseService enterpriseService;
     @Autowired
     private UserEPService epService;
-
+    @Autowired
+    private TokenService tokenService;
 
     @Override
     public UserDO getUserById(Long id) {
@@ -77,7 +80,11 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserDO Login(String UserName, String Password) {
+    public UserDO Login(String UserName, String Password,String checkCodeID,String checkCode) throws BusinessException {
+        if( !CaptchaServiceUtil.checkCodeToken(checkCodeID,checkCode)){
+          throw  new  BusinessException(EmBusinessError.PARAMETER_CHECKCODE_ERROR);
+        }
+
         //创建一个复杂查询器
         UserDOExample userDOExample =new UserDOExample();
         //通过上面的复杂查询器，来生成一个查询条件
@@ -112,6 +119,19 @@ public class UserServiceImpl implements UserService {
             return  userDOList.get(0);
         }
         return null;
+    }
+
+    /**
+     * 通过Token查询用户信息
+     * @param token
+     * @return
+     * @throws BusinessException
+     */
+    @Override
+    public UserDO FindByUserToken(String token) throws BusinessException {
+        Long UserID=tokenService.findByToken(token).getTuId();
+        UserDO userDO=getUserById(UserID);
+        return userDO;
     }
 
     /**

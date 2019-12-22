@@ -19,6 +19,27 @@ public class UserLoginVO {
         Password =MD5Utils.getPwd(password) ;
     }
 
-    private String UserName;
+
+    public String getCheckCode() {
+        return CheckCode;
+    }
+
+    public void setCheckCode(String checkCode) {
+        CheckCode = checkCode;
+    }
+
+    public String getCheckCodeID() {
+        return CheckCodeID;
+    }
+
+    public void setCheckCodeID(String checkCodeID) {
+        CheckCodeID = checkCodeID;
+    }
+
+    private  String CheckCodeID;
+    private  String UserName;
     private  String Password;
+    private  String CheckCode;
+
+
 }

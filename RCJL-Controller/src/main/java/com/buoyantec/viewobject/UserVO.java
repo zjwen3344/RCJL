@@ -1,6 +1,8 @@
 package com.buoyantec.viewobject;
 
 import java.util.Date;
+import java.util.List;
+import java.util.Map;
 
 public class UserVO {
 
@@ -108,6 +110,11 @@ public class UserVO {
         this.lastLoginTime = lastLoginTime;
     }
 
+
+
+
+
+
     //学生内部ID
     private Long tuId;
     //学校ID
@@ -134,6 +141,18 @@ public class UserVO {
     private String email;
     //最后登录时间
     private Date lastLoginTime;
+
+    public Map<Long, String> getUserRoles() {
+        return UserRoles;
+    }
+
+    public void setUserRoles(Map<Long, String> userRoles) {
+        UserRoles = userRoles;
+    }
+
+    //用户角色
+    private  Map<Long,String> UserRoles;
+
 
 
 }

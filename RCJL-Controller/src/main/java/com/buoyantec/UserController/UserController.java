@@ -1,5 +1,7 @@
 package com.buoyantec.UserController;
 
+import com.alibaba.druid.util.StringUtils;
+import com.alibaba.fastjson.JSONObject;
 import com.buoyantec.BaseController;
 import com.buoyantec.Utils.EmRegistType;
 import com.buoyantec.Utils.MD5Utils;
@@ -7,21 +9,21 @@ import com.buoyantec.Utils.MyBeanUtils;
 import com.buoyantec.Utils.RegexUtils;
 import com.buoyantec.dataobject.UserDO;
 import com.buoyantec.dataobject.enterpriseDO;
-import com.buoyantec.dataobject.tokenDO;
 import com.buoyantec.error.BusinessException;
 import com.buoyantec.error.EmBusinessError;
 import com.buoyantec.response.CommonReturnType;
+import com.buoyantec.service.RoleService;
 import com.buoyantec.service.ShiroService;
-import com.buoyantec.service.TokenService;
 import com.buoyantec.service.UserService;
 import com.buoyantec.service.model.UserModel;
 import com.buoyantec.viewobject.RegisterUSerVO;
-import com.buoyantec.viewobject.UserLoginVO;
 import com.buoyantec.viewobject.UserVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 //将UserController.class  设置成控制器对象，并且控制器名称是User
@@ -37,17 +39,25 @@ public class UserController extends BaseController {
     @Autowired
     private ShiroService shiroService;
 
+    @Autowired
+    private RoleService roleService;
+
 //    @Autowired
 //    private  TokenService tokenService;
 
 
-
     @RequestMapping(value="/Login",method = RequestMethod.POST)
-    public  CommonReturnType Login(@RequestBody UserLoginVO loginVO) throws BusinessException {
-        if(com.alibaba.druid.util.StringUtils.isEmpty(loginVO.getUserName())||com.alibaba.druid.util.StringUtils.isEmpty(loginVO.getPassword()))
+    public  CommonReturnType Login(@RequestBody JSONObject jsonObject) throws BusinessException {
+        String UserName=jsonObject.get("UserName").toString();
+        String Password=jsonObject.get("Password").toString();
+        String CheckCodeID=jsonObject.get("CheckCodeID").toString();
+        String CheckCode=jsonObject.get("CheckCode").toString();
+
+
+        if(StringUtils.isEmpty(UserName)|| StringUtils.isEmpty(Password))
             throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR,"用户名或密码不能为空");
         //登录
-        UserDO userDO= userService.Login(loginVO.getUserName(),loginVO.getPassword());
+        UserDO userDO= userService.Login(UserName,Password,CheckCodeID,CheckCode);
         if(userDO==null){
             throw  new BusinessException(EmBusinessError.USER_PASSORD_AND_USER_ERROR);
 
@@ -146,21 +156,34 @@ public class UserController extends BaseController {
         return  CommonReturnType.create(responseData);
     }
 
+    /**
+     * 通过Token来查询用户信息
+     * @param Token
+     * @return
+     */
+    @RequestMapping("/GetUserInfo")
+    @ResponseBody
+    public  CommonReturnType GetUserInfo(@RequestParam(name = "Token")String Token) throws BusinessException {
+        UserVO userVO=convertFromModelUserVO(userService.FindByUserToken(Token));
+
+        userVO.setUserRoles(roleService.FindByUserID(userVO.getTuId()));
+        return  CommonReturnType.create(userVO);
+    }
 
 
 
     /**
      * 用于合并两个Bean来达到脱密的步骤。
      *
-     * @param userModel
+     * @param userDO
      * @return
      */
-    private UserVO convertFromModelUserVO(UserModel userModel) {
-        if (userModel == null) {
+    private UserVO convertFromModelUserVO(UserDO userDO) {
+        if (userDO == null) {
             return null;
         }
         UserVO userVO = new UserVO();
-        MyBeanUtils.copyProperties(userModel, userVO);
+        MyBeanUtils.copyProperties(userDO, userVO);
         return userVO;
 
     }
@@ -178,8 +201,8 @@ public class UserController extends BaseController {
         UserDO userDO=new UserDO();
         MyBeanUtils.copyProperties(registerUSerVO,userDO);
         //将用户密码MD5加密一次
-        userDO.setPassword(MD5Utils.getPwd(userDO.getPassword()));
-
+        //userDO.setPassword(MD5Utils.getPwd(userDO.getPassword()));
+        userDO.setPassword(userDO.getPassword());
         return  userDO;
     }
 

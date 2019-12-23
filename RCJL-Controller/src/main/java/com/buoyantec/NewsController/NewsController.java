@@ -1,6 +1,7 @@
 package com.buoyantec.NewsController;
 
 import com.alibaba.fastjson.JSONObject;
+import com.buoyantec.BaseController;
 import com.buoyantec.Utils.JWTUtil;
 import com.buoyantec.Utils.MyBeanUtils;
 import com.buoyantec.dataobject.UserDO;
@@ -31,7 +32,7 @@ import java.util.List;
 @RestController("News")
 //设置控制器的URL
 @RequestMapping("/News")
-public class NewsController {
+public class NewsController extends BaseController {
 
     @Autowired
     private NewsService newsService;
@@ -107,11 +108,11 @@ public class NewsController {
         return  CommonReturnType.create(newsVO);
     }
 
-    @GetMapping("GetNewsTop")
+    @GetMapping("GetNews")
     @ResponseBody()
-    public CommonReturnType GetNewsTOP(){
+    public CommonReturnType GetNewsTOP(@RequestParam(name = "StartRow") int  StartRow,@RequestParam(name = "PageSize")int PageSize){
         List<NewsVO> newsvo= new ArrayList<>();
-        for (newsDO i :newsService.FindByNewsTOP()){
+        for (newsDO i :newsService.FindByNewsTOP(StartRow,PageSize)){
             NewsVO n=new NewsVO();
             MyBeanUtils.copyProperties(i,n);
             newsvo.add(n);

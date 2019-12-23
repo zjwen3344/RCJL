@@ -102,13 +102,13 @@ public class NewsServiceImpl  implements NewsService {
      * @return 返回6个新闻
      */
     @Override
-    public List<newsDO> FindByNewsTOP() {
+    public List<newsDO> FindByNewsTOP(int StartRow,int PageSize) {
         newsDOExample newsdo=new newsDOExample();
         newsdo.createCriteria().andTnDeleteEqualTo(false);
        // 不写就是降序
         newsdo.setOrderByClause("tn_Orde");
-        newsdo.setStartRow(0);
-        newsdo.setPageSize(6);
+        newsdo.setStartRow(StartRow);
+        newsdo.setPageSize(PageSize);
         return newsDAO.selectByExample(newsdo);
     }
 

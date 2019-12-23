@@ -104,7 +104,7 @@
 
         <table tableName="t_news" domainObjectName="newsDO">
             <generatedKey column="tn_id" sqlStatement="Mysql" identity="true"></generatedKey>
-            <columnOverride column="tn_Content" jdbcType="VARCHAR"></columnOverride>
+<!--            <columnOverride column="tn_Content" jdbcType="VARCHAR"></columnOverride>-->
         </table>
 
 <!--        <table tableName="t_news_class" domainObjectName="news_classDO">-->

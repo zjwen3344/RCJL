@@ -45,7 +45,7 @@ public interface NewsService {
      * 获取首页的新闻
      * @return
      */
-    List<newsDO> FindByNewsTOP();
+    List<newsDO> FindByNewsTOP(int StartRow,int PageSize);
 
     /**
      * 获取所有新闻分类

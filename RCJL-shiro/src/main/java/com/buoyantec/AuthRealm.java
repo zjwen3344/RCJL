@@ -83,14 +83,13 @@ public class AuthRealm extends AuthorizingRealm {
            right=rightRelation.FindByUserID(userDO.getTuId());
 
            //用户啥权限都没有直接return掉
-            if(right==null){
-                return simpleAuthorizationInfo;
+            if(right!=null){
+                //把用户刚刚查询到的权限ID给带到权限表里面查询权限的标识
+                for (userrightrelationDO i:right){
+                    permission.add(PerSerive.FindByID(i.getTurId()));
+                }
             }
-            //把用户刚刚查询到的权限ID给带到权限表里面查询权限的标识
 
-          for (userrightrelationDO i:right){
-            permission.add(PerSerive.FindByID(i.getTurId()));
-          }
             //查询角色连接用户表 来确定这个用户有多少个角色
             userroleRelat=userroleService.FindByUserID(userDO.getTuId());
           //没有角色就不添加了

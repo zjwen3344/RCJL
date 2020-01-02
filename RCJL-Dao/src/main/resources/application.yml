@@ -1,5 +1,5 @@
 web:
-  upload-path: D:/
+  upload-path: C:/
 
 spring:
   mvc:

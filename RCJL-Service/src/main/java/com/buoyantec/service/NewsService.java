@@ -4,7 +4,10 @@ import com.buoyantec.dataobject.UserDO;
 import com.buoyantec.dataobject.newsDO;
 import com.buoyantec.dataobject.news_classDO;
 import com.buoyantec.error.BusinessException;
+import com.buoyantec.service.ReturnVO.NewsReturnVO;
+import org.apache.tomcat.jni.User;
 
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -25,7 +28,13 @@ public interface NewsService {
     void Delect(newsDO news, UserDO userDO);
 
     //修改新闻
-    newsDO Set(newsDO newsDO, UserDO userDO);
+    newsDO Set(Long newsID,newsDO newsDO );
+
+    /**
+     * 获取首页的新闻
+     * @return
+     */
+    NewsReturnVO FindByNewsTOP(int StartRow,int PageSize);
 
     /**
      * 获取某一条新闻
@@ -39,19 +48,33 @@ public interface NewsService {
      * @param ID
      * @return
      */
-    List<newsDO> FindByNewsTypeID(Long ID);
+    NewsReturnVO FindByNewsTypeID(Long ID, int StartRow, int PageSize);
 
     /**
-     * 获取首页的新闻
-     * @return
+     * 修改一个新闻分类
+     * @param newsTypeID
+     * @param newsClassDO
      */
-    List<newsDO> FindByNewsTOP(int StartRow,int PageSize);
+    void SETNewsClass(Long newsTypeID,news_classDO newsClassDO );
+
+    /**
+     * 删除一个新闻分类
+     * @param NewsCLassID
+     * @param UserID
+     */
+    void DeleteNewsClass(Long NewsCLassID,Long UserID);
+
+    /**
+     * 添加新的新闻类型
+     * @param newsClassDO
+     */
+    void AddNewsClass(news_classDO  newsClassDO );
 
     /**
      * 获取所有新闻分类
      * @return
      */
-    news_classDO GetNewsType();
+    List<news_classDO> GetNewsType();
 
 
 

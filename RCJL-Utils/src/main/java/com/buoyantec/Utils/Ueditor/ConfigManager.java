@@ -45,7 +45,8 @@ public final class ConfigManager {
 		this.contextPath = contextPath;
 		
 		if ( contextPath.length() > 0 ) {
-			this.originalPath = this.rootPath + uri.substring( contextPath.length() );
+//			this.originalPath = this.rootPath + uri.substring( contextPath.length() );
+			this.originalPath="D:/ueditor";
 		} else {
 			this.originalPath = this.rootPath + uri;
 		}
@@ -152,7 +153,7 @@ public final class ConfigManager {
 	}
 	
 	private void initEnv () throws FileNotFoundException, IOException {
-		
+
 		File file = new File( this.originalPath );
 		
 		if ( !file.isAbsolute() ) {
@@ -174,15 +175,15 @@ public final class ConfigManager {
 	
 	private String getConfigPath () {
 
-
+		return "C:/config.json";
 //		return this.parentPath + File.separator + ConfigManager.configFileName;
 		/*此部分为手动修改*/
-		try {
-			// 需要先转为URI再getPath()，否则项目路径带空格或者带中文则无法读取到文件
-			return this.getClass().getClassLoader().getResource("config.json").toURI().getPath();
-		} catch (URISyntaxException e) {
-			return null;
-		}
+//		try {
+//			// 需要先转为URI再getPath()，否则项目路径带空格或者带中文则无法读取到文件
+////			return this.getClass().getClassLoader().getResource("config.json").toURI().getPath();
+//		} catch (URISyntaxException e) {
+//			return null;
+//		}
 	}
 
 	private String[] getArray ( String key ) {

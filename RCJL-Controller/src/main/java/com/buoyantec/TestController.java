@@ -1,20 +1,20 @@
 package com.buoyantec;
 
-import com.buoyantec.Utils.Kaptcha.CaptchaServiceUtil;
+import com.alibaba.fastjson.JSON;
 import com.buoyantec.Utils.RegexUtils;
 import com.buoyantec.error.BusinessException;
 import com.buoyantec.error.EmBusinessError;
 import com.buoyantec.response.CommonReturnType;
 import com.buoyantec.service.UserService;
-import com.google.code.kaptcha.impl.DefaultKaptcha;
+import com.buoyantec.Utils.UtilsVO.JobReviewVO;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -31,7 +31,7 @@ import java.util.Map;
 @RestController("Test")
 //设置控制器的URL
 @RequestMapping("/Test")
-public class TestController {
+public class TestController extends BaseController {
 
 protected  final Logger logger = LoggerFactory.getLogger(TestController.class);
 
@@ -83,7 +83,12 @@ protected  final Logger logger = LoggerFactory.getLogger(TestController.class);
         return map;
     }
 
+    @PostMapping("/TestMap")
+    public  CommonReturnType TestMap(@RequestBody String Params){
+        List<JobReviewVO> list= JSON.parseArray(Params,JobReviewVO.class);
 
+        return CommonReturnType.create(list);
+    }
 
 
 }

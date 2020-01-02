@@ -48,6 +48,7 @@ public class UserRoleRelationServiceImpl implements UserRoleRelationService {
               userrolerelationDOExample example=new userrolerelationDOExample();
               userrolerelationDOExample.Criteria criteria=example.createCriteria();
               criteria.andTuIdEqualTo(i);
+              criteria.andEpDeleteEqualTo(false);
               userrolerelationDOS.addAll(rolemapper.selectByExample(example));
           }
 

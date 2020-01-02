@@ -113,6 +113,7 @@ public class UserServiceImpl implements UserService {
         UserDOExample.Criteria criteria=userDOExample.createCriteria();
         //设置查询条件
         criteria.andLoginNameEqualTo(name);
+        criteria.andEpDeleteEqualTo(false);
         //查询
         List<UserDO>userDOList=userDOMapper.selectByExample(userDOExample);
         if(userDOList.size()!=0){

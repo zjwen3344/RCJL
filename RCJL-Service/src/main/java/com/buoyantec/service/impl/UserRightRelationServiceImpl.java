@@ -72,6 +72,7 @@ public class UserRightRelationServiceImpl implements UserRightRelationService {
         userrightrelationDOExample rightExample=new userrightrelationDOExample();
         userrightrelationDOExample.Criteria rightcriter= rightExample.createCriteria();
         rightcriter.andTuIdEqualTo(userDO.getTuId());
+        rightcriter.andEpDeleteEqualTo(false);
         List<userrightrelationDO> listright=rightrelationMapper.selectByExample(rightExample);
         if(listright.isEmpty()){
             return null;

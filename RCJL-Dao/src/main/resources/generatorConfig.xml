@@ -16,7 +16,7 @@
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
                         connectionURL="jdbc:mysql://127.0.0.1:3306/rc?serverTimezone=Asia/Shanghai"
                         userId="root"
-                        password="abc123">
+                        password="1912300959_Mysql_Manage_DTBY">
         </jdbcConnection>
 
         <!-- targetPackage：生成的实体类所在的包 -->
@@ -102,10 +102,10 @@
 <!--            <generatedKey column="tm_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
 <!--        </table>-->
 
-        <table tableName="t_news" domainObjectName="newsDO">
-            <generatedKey column="tn_id" sqlStatement="Mysql" identity="true"></generatedKey>
-<!--            <columnOverride column="tn_Content" jdbcType="VARCHAR"></columnOverride>-->
-        </table>
+<!--        <table tableName="t_news" domainObjectName="newsDO">-->
+<!--            <generatedKey column="tn_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--&lt;!&ndash;            <columnOverride column="tn_Content" jdbcType="VARCHAR"></columnOverride>&ndash;&gt;-->
+<!--        </table>-->
 
 <!--        <table tableName="t_news_class" domainObjectName="news_classDO">-->
 <!--            <generatedKey column="tnc_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
@@ -157,6 +157,19 @@
 
 <!--        <table tableName="t_token" domainObjectName="tokenDO">-->
 <!--            <generatedKey column="tk_id" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
+<!--        <table tableName="t_onecategory" domainObjectName="tonecategory">-->
+<!--             <generatedKey column="to_ID" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
+<!--        <table tableName="t_twocategory" domainObjectName="ttwocategory">-->
+<!--             <generatedKey column="tt_ID" sqlStatement="Mysql" identity="true"></generatedKey>-->
+<!--        </table>-->
+            <table tableName="t_job" domainObjectName="TJobDO">
+                <generatedKey column="tj_ID" sqlStatement="Mysql" identity="true"></generatedKey>
+            </table>
+
+<!--        <table tableName="t_jobreviewer" domainObjectName="TJobReviewerDO">-->
+<!--            <generatedKey column="tjr_ID" sqlStatement="Mysql" identity="true"></generatedKey>-->
 <!--        </table>-->
 
 

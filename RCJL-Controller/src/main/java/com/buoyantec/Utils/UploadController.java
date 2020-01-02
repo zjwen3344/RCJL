@@ -13,6 +13,7 @@ import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -20,6 +21,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.URLEncoder;
+
+
 
 /**
  * @program: RCJL
@@ -32,6 +35,10 @@ import java.net.URLEncoder;
 public class UploadController extends BaseController {
 
     Logger logger= LoggerFactory.getLogger(this.getClass());
+
+    @Value("${web.upload-path}")
+    public String filePath;
+
 
     @Autowired
     private AttachmentService attachmentService;
@@ -49,7 +56,7 @@ public class UploadController extends BaseController {
         if(file.isEmpty()){
             throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR,"请选择要上传的文件");
         }
-        return  CommonReturnType.create(attachmentService.UploadImage(file,loginAccount,req.getServletContext().getRealPath("/upload"),req.getScheme(),req.getServerName(), req.getServerPort()+""));
+        return  CommonReturnType.create(attachmentService.UploadImage(file,loginAccount,filePath+"/ueditor/UploadFile",req.getScheme(),req.getServerName(), req.getServerPort()+""));
     }
 
     @RequestMapping("Download")

@@ -11,4 +11,5 @@ public interface EnterpriseService {
      */
     Long RegisterEnterprise(enterpriseDO enterpriseDO) throws BusinessException;
 
+
 }
